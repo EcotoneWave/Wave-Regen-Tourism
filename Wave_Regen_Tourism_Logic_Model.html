@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Regenerative Blue Tourism Portfolio — Logic Model</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: Arial, sans-serif; font-size: 11px; background: #f4f6f4; color: #1a1a1a; padding: 24px; }
+  .page-header { margin-bottom: 20px; }
+  .page-header h1 { font-size: 18px; font-weight: 700; color: #1B6B4A; letter-spacing: 0.02em; margin-bottom: 4px; }
+  .page-header p { font-size: 11px; color: #555; }
+  .legend { display: flex; gap: 24px; margin-bottom: 16px; align-items: center; flex-wrap: wrap; }
+  .legend-item { display: flex; align-items: center; gap: 6px; font-size: 10.5px; color: #444; }
+  .legend-swatch { width: 14px; height: 14px; border-radius: 2px; flex-shrink: 0; }
+  .swatch-monetizable { background: #D6EFE0; border: 1px solid #8CC9A6; }
+  .wrapper { overflow-x: auto; border-radius: 6px; box-shadow: 0 2px 12px rgba(0,0,0,0.12); }
+  table { border-collapse: collapse; width: 100%; min-width: 1500px; background: #fff; }
+  col.c-inputs     { width: 8%; }
+  col.c-activities { width: 12%; }
+  col.c-outputs    { width: 11%; }
+  col.c-st         { width: 14%; }
+  col.c-int        { width: 14%; }
+  col.c-lt         { width: 14%; }
+  col.c-impacts    { width: 13%; }
+  thead th { background: #1B6B4A; color: #fff; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; padding: 10px; text-align: left; border-right: 1px solid #2E7D52; vertical-align: bottom; }
+  thead th:last-child { border-right: none; }
+  .phase-label { display: block; font-size: 9px; font-weight: 400; opacity: 0.75; text-transform: none; letter-spacing: 0; margin-top: 2px; }
+  td.section-label { background: #2E5E3A; color: #fff; font-weight: 700; font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.07em; padding: 7px 10px; border-top: 2px solid #1B6B4A; border-bottom: 1px solid #1B6B4A; }
+  td { padding: 7px 10px; vertical-align: top; border-right: 1px solid #dde8e2; border-bottom: 1px solid #dde8e2; line-height: 1.4; color: #1a1a1a; }
+  td:last-child { border-right: none; }
+  li.monetizable { background: #D6EFE0; border-radius: 3px; padding-left: 14px !important; }
+  li.monetizable::before { color: #0F4A30 !important; left: 4px !important; }
+  .cell-list { list-style: none; padding: 0; margin: 0; }
+  .cell-list li { padding: 3px 4px 3px 10px; position: relative; line-height: 1.4; margin-bottom: 2px; }
+  .cell-list li::before { content: "•"; position: absolute; left: 0; color: #1B6B4A; font-weight: bold; }
+  .activity-num { display: inline-block; background: #1B6B4A; color: #fff; font-size: 9px; font-weight: 700; border-radius: 3px; padding: 1px 5px; margin-right: 4px; white-space: nowrap; }
+  .activity-cell { font-weight: 600; color: #1B6B4A; font-size: 10.5px; }
+  .impact-cell { font-weight: 600; color: #0F4A30; font-style: italic; }
+  .input-cell { font-size: 10px; color: #444; }
+  .ref { font-size: 8.5px; color: #1B6B4A; font-weight: 600; white-space: nowrap; }
+  .footnote { margin-top: 16px; font-size: 10px; color: #666; font-style: italic; }
+  .footnote strong { color: #1B6B4A; }
+</style>
+</head>
+<body>
+
+<div class="page-header">
+  <h1>Regenerative Blue Tourism Portfolio &mdash; Logic Model</h1>
+  <p>WAVE &nbsp;|&nbsp; Phase 1 Scoping &nbsp;|&nbsp; April 2026</p>
+</div>
+
+<div class="legend">
+  <div class="legend-item"><div class="legend-swatch swatch-monetizable"></div> Potential monetizable outcome</div>
+  <div class="legend-item" style="color:#1B6B4A; font-weight:600; font-size:10.5px;">Numbers in parentheses indicate alignment with activities (1)–(8)</div>
+</div>
+
+<div class="wrapper">
+<table>
+  <colgroup>
+    <col class="c-inputs"><col class="c-activities"><col class="c-outputs">
+    <col class="c-st"><col class="c-int"><col class="c-lt"><col class="c-impacts">
+  </colgroup>
+  <thead>
+    <tr>
+      <th>Inputs</th>
+      <th>Activities</th>
+      <th>Outputs</th>
+      <th>Short-Term Outcomes <span class="phase-label">Immediate ecological &amp; operational changes</span></th>
+      <th>Intermediate Outcomes <span class="phase-label">System-level responses</span></th>
+      <th>Long-Term Outcomes <span class="phase-label">Structural change</span></th>
+      <th>Impacts <span class="phase-label">Strategic &amp; national level</span></th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <!-- ROW 1: Ecosystems header -->
+    <tr class="stakeholder-row">
+      <td rowspan="14" class="input-cell">
+        <ul class="cell-list">
+          <li>Capital investments (developers, operators)</li>
+          <li>Technical expertise (marine scientists, engineers, NGOs)</li>
+          <li>Local knowledge &amp; labor (communities, fishers, artisans)</li>
+          <li>Partnerships (government, NGOs, research institutions)</li>
+          <li>Technology &amp; infrastructure</li>
+          <li>Natural capital baseline (reefs, mangroves, coastal systems)</li>
+        </ul>
+      </td>
+      <td rowspan="14" class="activity-cell">
+        <ul class="cell-list">
+          <li><span class="activity-num">1</span>Coral gardening + outplanting</li>
+          <li><span class="activity-num">2</span>Native coastal habitat landscaping through Mangrove restoration / assisted natural regeneration (hydrology-first + stewardship)</li>
+          <li><span class="activity-num">3</span>Advanced wastewater treatment + nutrient polishing beyond compliance (with transparent monitoring)</li>
+          <li><span class="activity-num">4</span>Green infrastructure for stormwater (Wadi restoration, bioswales, permeable surfaces, constructed wetlands)</li>
+          <li><span class="activity-num">5</span>&#8216;Reef-positive&#8217; seafood procurement + fisher co-management support</li>
+          <li><span class="activity-num">6</span>Ghost gear recovery + pay-for-return with local fishers + recycling/upcycling</li>
+          <li><span class="activity-num">7</span>Local workforce development programs tied to regenerative programs for hotel employees</li>
+          <li><span class="activity-num">8</span>Coastal community micro-enterprise incubator: Traditional boatbuilding + low-impact marine excursions</li>
+        </ul>
+      </td>
+      <td rowspan="14">
+        <ul class="cell-list">
+          <li>Area of coral reef protected or restored</li>
+          <li>Area of mangroves protected or restored / Length of coastline protected</li>
+          <li>Volume of wastewater treated beyond compliance / Volume of contaminated waste water from land-based sources diverted from waterways</li>
+          <li>Area of green infrastructure installed / Length of coastline protected</li>
+          <li>% seafood sourced sustainably and # of fishers participating</li>
+          <li>Tons of ghost gear recovered / Volume of macro-plastic diverted from nature</li>
+          <li>Number of local individuals trained and certified in regenerative practices</li>
+          <li>Number of community enterprises supported / # of jobs created</li>
+        </ul>
+      </td>
+      <td colspan="3" class="section-label">Ecosystems</td>
+      <td rowspan="14" class="impact-cell">
+        <ul class="cell-list">
+          <li>Marine and coastal ecosystems are improved and brought closer to self-sustaining, functioning states, helping secure the Red Sea as a strategic national natural asset</li>
+          <li>Local economies generate more consistent and diversified livelihoods linked to healthy ecosystems, contributing to national economic diversification</li>
+          <li>Tourism shifts increasingly from minimizing harm to actively restoring ecosystems and communities, establishing a high-value, nature-positive sector</li>
+          <li>Natural capital is protected and enhanced as a foundational asset in tourism and coastal development decision-making</li>
+          <li>Contribution to national economic diversification through high-value, nature-based tourism</li>
+          <li>Saudi Arabia is positioned as a global leader in regenerative tourism, catalyzing private investment into nature-positive infrastructure and business models</li>
+        </ul>
+      </td>
+    </tr>
+
+    <!-- ROW 2: Ecosystems outcomes -->
+    <tr>
+      <td>
+        <ul class="cell-list">
+          <li>Early-stage coral survival and attachment rates increased (post-outplanting) <span class="ref">(1)</span></li>
+          <li>Incidence of physical reef damage reduced <span class="ref">(1)</span></li>
+          <li>Mangrove seedling survival and establishment rates increased (hydrology restored) <span class="ref">(2)</span></li>
+          <li>Nutrient concentrations reduced (N, P) in coastal waters due to advanced wastewater treatment <span class="ref">(3)</span></li>
+          <li>Sediment loads reduced in nearshore environments due to green stormwater infrastructure <span class="ref">(4)</span></li>
+          <li>Localized water clarity improved (turbidity ↓, visibility ↑) <span class="ref">(1)(2)(3)(4)</span></li>
+          <li>Reduction in fishing pressure on targeted reef species <span class="ref">(5)</span></li>
+          <li>Reduced fishing gear in ocean habitats <span class="ref">(6)</span></li>
+          <li>Reduced localized physical disturbance to reefs and coastal habitats <span class="ref">(8)</span></li>
+        </ul>
+      </td>
+      <td>
+        <ul class="cell-list">
+          <li>Coral establishment, natural recruitment, and reef regeneration rates increase <span class="ref">(1)</span></li>
+          <li>Fish biomass and abundance increase (due to habitat + reduced pressure) <span class="ref">(1)(2)(3)(4)(5)(6)(8)</span></li>
+          <li>Reef structural complexity improves <span class="ref">(1)(3)(4)(5)(6)(8)</span></li>
+          <li>Mangrove canopy cover and density increase <span class="ref">(2)(3)(4)</span></li>
+          <li>Connectivity between habitats improves (reef–seagrass–mangrove linkages) <span class="ref">(1)(2)(3)(4)</span></li>
+          <li>Water quality remains consistently within ecological thresholds <span class="ref">(3)(4)</span></li>
+          <li>Marine debris / entanglement pressure declines <span class="ref">(6)</span></li>
+          <li>Wildlife presence / habitat use improves <span class="ref">(2)(3)(4)(6)(8)</span></li>
+        </ul>
+      </td>
+      <td>
+        <ul class="cell-list">
+          <li>Biodiversity increases across reef and coastal habitats <span class="ref">(1)(2)(3)(4)(5)(6)(8)</span></li>
+          <li>Reef and coastal ecosystems transition toward self-sustaining ecological states <span class="ref">(1)(2)(3)(4)(5)(6)</span></li>
+          <li>Ecosystem service capacity and reliability increase (tourism, fisheries, coastal protection) <span class="ref">(1)(2)(3)(4)(5)(6)(8)</span></li>
+          <li>Resilience to climate and environmental stressors increases <span class="ref">(1)(2)(3)(4)(5)(6)</span></li>
+        </ul>
+      </td>
+    </tr>
+
+    <!-- ROW 3: Local Communities header -->
+    <tr><td colspan="3" class="section-label">Local Communities</td></tr>
+
+    <!-- ROW 4: Local Communities outcomes -->
+    <tr>
+      <td>
+        <ul class="cell-list">
+          <li>Short-term employment generated (restoration work, waste management, guiding, construction of green infra) <span class="ref">(1)(2)(3)(4)</span></li>
+          <li>New income streams initiated (micro-enterprises linked to tourism value chains, educational institutions providing certifications) <span class="ref">(6)(7)(8)</span></li>
+          <li>Participation in stewardship programs increased (e.g., reef monitoring, gear recovery schemes) <span class="ref">(1)(2)(3)(4)(6)</span></li>
+          <li>Skills, certifications, and employability of local residents increase <span class="ref">(1)(2)(7)(8)</span></li>
+          <li>Traditional skills, cultural heritage, and community-based livelihoods are revitalized <span class="ref">(8)</span></li>
+          <li>Participation of local communities in tourism-linked value chains increases <span class="ref">(5)(7)(8)</span></li>
+        </ul>
+      </td>
+      <td>
+        <ul class="cell-list">
+          <li>Stable employment in regenerative sectors established <span class="ref">(1)(2)(3)(4)(7)(8)</span></li>
+          <li class="monetizable">Household income from tourism-linked activities increases <span class="ref">(5)(7)(8)</span></li>
+          <li>Local skills base in restoration, tourism, and monitoring strengthened <span class="ref">(1)(2)(6)(7)(8)</span></li>
+          <li>Local value chains strengthened (hospitality sourcing locally) <span class="ref">(5)(6)(7)(8)</span></li>
+          <li>Community participation in resource management becomes institutionalized <span class="ref">(2)(5)(6)(8)</span></li>
+          <li>Sense of ownership, trust, and community alignment with tourism development increases <span class="ref">(2)(5)(6)(7)(8)</span></li>
+          <li>Community-owned enterprises and SMEs linked to tourism value chains grow and stabilize <span class="ref">(5)(6)(8)</span></li>
+        </ul>
+      </td>
+      <td>
+        <ul class="cell-list">
+          <li>More resilient and diversified coastal livelihoods <span class="ref">(1)(2)(5)(6)(7)(8)</span></li>
+          <li>Long-term retention and advancement of local talent (reduced brain drain) <span class="ref">(1)(2)(7)(8)</span></li>
+          <li>Strengthened cultural identity linked to marine ecosystems <span class="ref">(2)(5)(8)</span></li>
+          <li>Long-term household prosperity and upward economic mobility increase <span class="ref">(1)(2)(5)(6)(7)(8)</span></li>
+          <li>Intergenerational opportunity expands <span class="ref">(1)(2)(5)(7)(8)</span></li>
+        </ul>
+      </td>
+    </tr>
+
+    <!-- ROW 5: Hospitality Operators header -->
+    <tr><td colspan="3" class="section-label">Hospitality Operators / Developers</td></tr>
+
+    <!-- ROW 6: Hospitality Operators outcomes -->
+    <tr>
+      <td>
+        <ul class="cell-list">
+          <li>Water treatment and reuse rates increased <span class="ref">(3)</span></li>
+          <li>Waste leakage to marine environment reduced <span class="ref">(3)(6)</span></li>
+          <li>Sustainable sourcing share increased <span class="ref">(5)(8)</span></li>
+          <li>Perceived environmental quality of site improved <span class="ref">(1)(2)(3)(4)(6)(8)</span></li>
+          <li>Increased guest engagement related to ecosystem health <span class="ref">(1)(2)(5)(6)(7)(8)</span></li>
+          <li>Access to trained local workforce increased <span class="ref">(7)</span></li>
+        </ul>
+      </td>
+      <td>
+        <ul class="cell-list">
+          <li class="monetizable">Operating costs reduced (water) <span class="ref">(3)(4)</span></li>
+          <li>Sustainability positioning translates into market differentiation <span class="ref">(1)(2)(3)(5)(6)(8)</span></li>
+          <li class="monetizable">Guest satisfaction and repeat visitation increase <span class="ref">(1)(2)(3)(5)(6)(8)</span></li>
+          <li class="monetizable">Revenue per guest increases (WTP / premium positioning) <span class="ref">(1)(2)(3)(5)(8)</span></li>
+          <li class="monetizable">Sustained and/or increased demand for regenerative ocean-based experiences <span class="ref">(1)(2)(6)(8)</span></li>
+          <li class="monetizable">Operational risks related to environmental degradation decrease <span class="ref">(1)(2)(3)(4)(5)(6)</span></li>
+          <li class="monetizable">Coastal flooding, erosion, and wave-related asset risks decrease <span class="ref">(1)(2)(4)</span></li>
+          <li class="monetizable">Maintenance needs (drainage, infrastructure) reduced <span class="ref">(1)(2)(4)</span></li>
+          <li class="monetizable">Reduced recruitment / training costs of employees <span class="ref">(7)</span></li>
+          <li>Employee turnover reduced <span class="ref">(7)</span></li>
+        </ul>
+      </td>
+      <td>
+        <ul class="cell-list">
+          <li>Sustained premium destination positioning <span class="ref">(1)(2)(3)(5)(6)(8)</span></li>
+          <li class="monetizable">Increased long-term asset value <span class="ref">(1)(2)(3)(4)(5)(7)(8)</span></li>
+          <li>Reduced long-term exposure to environmental and climate-related risks <span class="ref">(1)(2)(3)(4)(5)(6)</span></li>
+          <li>Tourist expectations shift toward regenerative and nature-positive tourism experiences <span class="ref">(1)(2)(5)(6)(8)</span></li>
+        </ul>
+      </td>
+    </tr>
+
+    <!-- ROW 7: Fishers header -->
+    <tr><td colspan="3" class="section-label">Fishers / Local Producers</td></tr>
+
+    <!-- ROW 8: Fishers outcomes -->
+    <tr>
+      <td>
+        <ul class="cell-list">
+          <li>Adoption of sustainable fishing practices increased <span class="ref">(5)(6)</span></li>
+          <li>Volume/value of catch entering certified or &#8220;reef-positive&#8221; local supply chains increased <span class="ref">(5)</span></li>
+          <li>Income from regenerative activities initiated (ghost gear recovery, eco-tourism, guiding) <span class="ref">(6)(8)</span></li>
+          <li>Reduction in harmful practices (e.g., abandoned gear, destructive fishing) <span class="ref">(5)(6)</span></li>
+          <li>Access to higher-value local tourism markets and improved pricing increases <span class="ref">(5)</span></li>
+          <li>Participation in fisheries co-management and stewardship mechanisms increases <span class="ref">(5)(6)</span></li>
+          <li>Skills and capacity in sustainable fishing, tourism services, and enterprise development increase <span class="ref">(5)(6)(8)</span></li>
+        </ul>
+      </td>
+      <td>
+        <ul class="cell-list">
+          <li class="monetizable">Catch per unit effort (CPUE) improves <span class="ref">(1)(2)(3)(4)(5)(6)</span></li>
+          <li class="monetizable">Income stability increases due to healthier stocks and improved pricing <span class="ref">(1)(2)(5)(6)(8)</span></li>
+          <li class="monetizable">Avoided revenue loss from declining stocks and degraded marine ecosystems <span class="ref">(1)(2)(3)(4)(5)(6)</span></li>
+          <li>Integration into sustainable local tourism value chains increases <span class="ref">(5)(6)(8)</span></li>
+        </ul>
+      </td>
+      <td>
+        <ul class="cell-list">
+          <li>Sustainable fisheries are maintained at healthy and productive stock levels <span class="ref">(1)(2)(3)(4)(5)(6)</span></li>
+          <li>Long-term income security and resilience from marine resources increase <span class="ref">(1)(2)(5)(6)(8)</span></li>
+        </ul>
+      </td>
+    </tr>
+
+    <!-- ROW 9: Public/Society header -->
+    <tr><td colspan="3" class="section-label">Public / Society</td></tr>
+
+    <!-- ROW 10: Public outcomes -->
+    <tr>
+      <td>
+        <ul class="cell-list">
+          <li>Public coastal areas and marine environments become cleaner <span class="ref">(3)(6)</span></li>
+          <li>Public access to healthy coastal ecosystems improves <span class="ref">(1)(2)(6)</span></li>
+          <li>Local public participation in environmental stewardship increases <span class="ref">(2)(5)(6)(8)</span></li>
+          <li>Surface runoff management performance improves <span class="ref">(4)</span></li>
+          <li>Public awareness of regenerative tourism and ecosystem value increases <span class="ref">(1)(2)(5)(8)</span></li>
+        </ul>
+      </td>
+      <td>
+        <ul class="cell-list">
+          <li>Coastal flooding, erosion, and wave-related public risk exposure reduced <span class="ref">(1)(2)(4)</span></li>
+          <li>Local economic multipliers and community spillover benefits increase <span class="ref">(5)(7)(8)</span></li>
+          <li class="monetizable">GHG emissions reduced (tCO&#8322;e) <span class="ref">(2)(3)(4)</span></li>
+          <li>Public drainage and stormwater system stress reduced <span class="ref">(4)</span></li>
+          <li class="monetizable">Urban surface water flooding incidence and severity reduced <span class="ref">(4)</span></li>
+          <li>Avoided environmental remediation costs <span class="ref">(3)</span></li>
+        </ul>
+      </td>
+      <td>
+        <ul class="cell-list">
+          <li class="monetizable">Avoided long-term public and private coastal damage costs <span class="ref">(1)(2)(4)</span></li>
+          <li>Contribution to climate adaptation and mitigation <span class="ref">(1)(2)(3)(4)(5)(6)</span></li>
+          <li>Scalable model for regenerative coastal development <span class="ref">(1)(2)(3)(4)(5)(7)(8)</span></li>
+          <li>Increased public revenues supported through sustained economic activity <span class="ref">(1)(2)(5)(7)(8)</span></li>
+        </ul>
+      </td>
+    </tr>
+
+    <!-- ROW 11: Tourists/Guests header -->
+    <tr><td colspan="3" class="section-label">Tourists / Guests</td></tr>
+
+    <!-- ROW 12: Tourists outcomes -->
+    <tr>
+      <td>
+        <ul class="cell-list">
+          <li>Improved visitor experience</li>
+          <li>Increased perception of destination quality</li>
+          <li>Stronger regenerative destination awareness</li>
+        </ul>
+      </td>
+      <td>
+        <ul class="cell-list">
+          <li>Higher willingness to pay</li>
+          <li>Longer stays</li>
+          <li>Increased repeat visitation</li>
+        </ul>
+      </td>
+      <td>
+        <ul class="cell-list">
+          <li>Greater access to high-quality nature-positive travel experiences</li>
+          <li>Stronger connection to marine nature and local culture</li>
+          <li>Increased traveler participation in responsible tourism behaviors</li>
+          <li>Higher lifetime satisfaction from travel choices aligned with personal values</li>
+          <li>Greater trust in credible regenerative tourism offerings</li>
+        </ul>
+      </td>
+    </tr>
+
+  </tbody>
+</table>
+</div>
+
+<p class="footnote">
+  <strong>Key:</strong> Green-shaded items indicate potential monetizable outcomes for SROI analysis. &nbsp;|&nbsp;
+  Numbers in parentheses (e.g., <strong>(1)(2)</strong>) indicate alignment with the corresponding activity. &nbsp;|&nbsp;
+  WAVE Regenerative Tourism SROI &mdash; Phase 1 Scoping &nbsp;|&nbsp; Ecotone Partners, April 2026
+</p>
+
+</body>
+</html>

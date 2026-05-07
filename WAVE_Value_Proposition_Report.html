@@ -1,0 +1,2598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WAVE Value Proposition Report — Regenerative Coastal &amp; Ocean Tourism</title>
+<style>
+
+:root {
+  --navy: #002E4A;
+  --orange: #DC5038;
+  --mid-blue: #4080AB;
+  --light: #EDF2F2;
+  --cream: #F5F2EB;
+  --nav-width: 260px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: Calibri, Arial, sans-serif;
+  font-size: 14px;
+  color: var(--navy);
+  background: #fff;
+  display: flex;
+}
+
+/* ── SIDEBAR NAV ── */
+#sidenav {
+  position: fixed;
+  top: 0; left: 0;
+  width: var(--nav-width);
+  height: 100vh;
+  background: var(--navy);
+  overflow-y: auto;
+  z-index: 100;
+  padding-bottom: 40px;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 16px 14px;
+  border-bottom: 2px solid var(--orange);
+  margin-bottom: 8px;
+}
+
+.nav-logo-img { width: 32px; height: 32px; }
+
+.nav-brand {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.02em;
+}
+
+#sidenav ul { list-style: none; padding: 8px 0; }
+
+.nav-h1 > a {
+  display: block;
+  padding: 8px 16px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  line-height: 1.3;
+  border-left: 3px solid transparent;
+  transition: all 0.15s;
+}
+
+.nav-h1 > a:hover {
+  background: rgba(220,80,56,0.15);
+  border-left-color: var(--orange);
+  color: var(--orange);
+}
+
+.nav-h2 > a {
+  display: block;
+  padding: 5px 16px 5px 28px;
+  color: rgba(255,255,255,0.65);
+  text-decoration: none;
+  font-size: 11px;
+  line-height: 1.3;
+  border-left: 3px solid transparent;
+  transition: all 0.15s;
+}
+
+.nav-h2 > a:hover {
+  color: rgba(220,80,56,0.9);
+  border-left-color: var(--orange);
+}
+
+/* ── MAIN CONTENT ── */
+#main {
+  margin-left: var(--nav-width);
+  width: calc(100% - var(--nav-width));
+  max-width: 960px;
+  padding: 48px 56px 80px;
+}
+
+/* ── COVER TABLE ── */
+.cover-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 48px;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,46,74,0.15);
+}
+
+.cover-table thead { display: none; }
+
+.cover-table tr:first-child td:first-child,
+.cover-table tr:first-child th:first-child {
+  background: var(--navy);
+  color: #fff;
+  padding: 32px 24px;
+  width: 32%;
+  vertical-align: top;
+}
+
+.cover-table tr:first-child td:last-child,
+.cover-table tr:first-child th:last-child {
+  background: var(--cream);
+  padding: 32px 32px;
+  vertical-align: top;
+}
+
+.cover-table tr:last-child td,
+.cover-table tr:last-child th {
+  background: var(--orange);
+  color: #fff;
+  padding: 10px 24px;
+  font-size: 13px;
+}
+
+/* Cover sidebar styling */
+.cover-table tr:first-child th:first-child img,
+.cover-table tr:first-child td:first-child img {
+  width: 120px;
+  height: auto;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.cover-table tr:first-child th:first-child strong,
+.cover-table tr:first-child td:first-child strong {
+  color: var(--orange);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  display: block;
+  margin-top: 16px;
+  margin-bottom: 4px;
+}
+
+.cover-table tr:first-child th:first-child p,
+.cover-table tr:first-child td:first-child p {
+  color: rgba(255,255,255,0.9);
+  font-size: 13px;
+  margin-bottom: 0;
+}
+
+/* Cover right column */
+.cover-table tr:first-child th:last-child p:first-child,
+.cover-table tr:first-child td:last-child p:first-child {
+  color: #888;
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+
+.cover-table tr:first-child th:last-child strong,
+.cover-table tr:first-child td:last-child strong {
+  color: var(--navy);
+}
+
+/* ── HEADINGS ── */
+h1 {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--navy);
+  margin: 48px 0 16px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid var(--orange);
+  scroll-margin-top: 24px;
+}
+
+h1:first-of-type { margin-top: 0; }
+
+h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--orange);
+  margin: 32px 0 12px;
+  scroll-margin-top: 24px;
+}
+
+h3 {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--navy);
+  margin: 24px 0 8px;
+  scroll-margin-top: 24px;
+}
+
+/* ── BODY TEXT ── */
+p {
+  line-height: 1.65;
+  margin-bottom: 14px;
+  color: var(--navy);
+}
+
+/* ── LISTS ── */
+ul, ol {
+  padding-left: 0;
+  margin: 0 0 16px 0;
+  list-style: none;
+}
+
+li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 8px;
+  line-height: 1.55;
+}
+
+li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--orange);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+ol { counter-reset: item; }
+ol li::before {
+  content: counter(item) ".";
+  counter-increment: item;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--orange);
+}
+
+/* ── TABLE LABEL ── */
+.tbl-label {
+  font-weight: 700;
+  color: var(--navy);
+  font-size: 13px;
+  margin: 24px 0 6px;
+}
+
+/* ── DATA TABLES ── */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 0 28px;
+  font-size: 13px;
+  box-shadow: 0 1px 6px rgba(0,46,74,0.1);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.data-table th,
+.data-table .tbl-hdr {
+  background: var(--navy);
+  color: #fff;
+  padding: 9px 12px;
+  text-align: left;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.02em;
+  border-right: 1px solid rgba(255,255,255,0.15);
+}
+
+.data-table th:last-child,
+.data-table .tbl-hdr:last-child { border-right: none; }
+
+.data-table td {
+  padding: 8px 12px;
+  border-bottom: 1px solid #C5D0D8;
+  border-right: 1px solid #C5D0D8;
+  vertical-align: top;
+  line-height: 1.45;
+}
+
+.data-table td:last-child { border-right: none; }
+
+.data-table tr:nth-child(even) td { background: var(--light); }
+.data-table tr:last-child td { border-bottom: none; }
+
+.data-table td strong { color: var(--orange); }
+.data-table td em { color: var(--navy); font-weight: 600; font-style: italic; }
+
+/* ── STRONG / EM IN BODY ── */
+strong { color: var(--navy); }
+em { color: var(--navy); }
+
+/* ── SCROLLBAR ── */
+#sidenav::-webkit-scrollbar { width: 4px; }
+#sidenav::-webkit-scrollbar-thumb { background: rgba(220,80,56,0.4); border-radius: 2px; }
+
+/* ── FOOTER ── */
+#page-footer {
+  margin-top: 60px;
+  padding-top: 16px;
+  border-top: 3px solid var(--orange);
+  font-size: 12px;
+  color: var(--mid-blue);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ── PRINT ── */
+@media print {
+  #sidenav { display: none; }
+  #main { margin-left: 0; width: 100%; padding: 24px; }
+}
+
+</style>
+</head>
+<body>
+<nav id="sidenav"><div class="nav-logo"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAJYCAYAAAC+ZpjcAAAXSElEQVR4nO3dv4tex7nA8XmvpUZYWq0VXLj2v7BgcHARybKUBYfrpLRvFbAIqgJCIUXipAgWglQqbHAVu0wcMOhqY61uYTA46F9w7cJEklcKaiTx3iIMUWT92N13zsw8cz6ffuF598yc89058G5KAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABQzqL1AMBYfvmjHy9bz7Aff/y//3U/BIo50HoAYCy/OHqz9Qj78sfWAwBD+a/WAwAAjEZgAQAUJrAAAAoTWAAAhQksAIDCBBYAQGECCwCgMIEFAFCYwAIAKExgAQAUJrAAAAoTWAAAhQksAIDCBBYAQGECCwCgMIEFAFCYwAIAKExgAQAUJrAAAAoTWAAAhQksAIDCBBYAQGECCwCgMIEFAFCYwAIAKExgAQAUJrAAAAoTWAAAhQksAIDCBBYAQGECCwCgMIEFAFCYwAIAKExgAQAUJrAAAAoTWAAAhQksAIDCBBbDunDyjeXGxuay9RzA921sbC4vnHzD/mRYAoshfXDq9eVPn99Jl17aSSIL+rKxsbm89NJO+unzO+mDU6/bnwxJYDGcD069vjxx6E5KKaVjz90XWdCRHFfHnrufUkrpxKE7IoshCSyG8nBcZSIL+vBoXGUiixEJLIbxuLjKRBa09aS4ykQWoxFYDOFpcZWJLGjjWXGViSxGIrAIbzdxlYksqGu3cZWJLEaxaD0ArGIvcfWwGw8OpLPfrKXr1y/bA4X95sTpkA/H329fsRYK22tcPWz77uF0Zuuqa0JYFi9h7TeuMpEF01klrjKRRWReERLSqnGVkteFMJUScZWS14XEJrAIp0RcZSILyioVV5nIIiqBRSgl4yoTWVBG6bjKRBYRCSzCmCKuMpEFq5kqrjKRRTQCixCmjKtMZMH+TB1XmcgiEoFF92rEVSayYG9qxVUmsohCYNG1mnGViSzYndpxlYksIhBYdKtFXGUiC56uVVxlIoveCSy61DKuMpEFj9c6rjKRRc8EFt3pIa4ykQX/qZe4ykQWvRJYdKWnuMpEFvxLb3GViSx6JLDoRo9xlYks5q7XuMpEFr0RWHSh57jKRBZz1XtcZSKLnggsmosQV5nIYm6ixFUmsuiFwKKpSHGViSzmIlpcZSKLHggsmokYV5nIYnRR4yoTWbQmsGgiclxlIotRRY+rTGTRksCiuhHiKhNZjGaUuMpEFq0ILKoaKa4ykcUoRourTGTRgsCimhHjKhNZRDdqXGUii9oEFlWMHFeZyCKq0eMqE1nUJLCY3BziKhNZRDOXuMpEFrUILCY1p7jKRBZRzC2uMpFFDQKLyVw4+cbs4irLkQU9m2NcZScO3UkXTr4hspiMwGIyf751IN14cKD1GM389Z+HW48ATzXnNXrjwYH051vzvT8xPYHFZK5fv7w4+83aLCPro5319P61K4vWc8DTvH/tyuKjnfXWY1R348GBdPabtXT9+mV7lMkILCY1x8gSV0Qyt8gSV9QisJjcnCJLXBHRXCJLXFGTwKKKOUSWuCKy0SNLXFGbwKKakSNLXDGCUSNLXNGCwKKqESNLXDGS0SJLXNGKBUcTo3zBobh6sq/feiXEdwy9/OlXrt9j/Or46eXP1261HmMl4oqWnGDRxAgnWeKKkUU/yRJXtCawaCZyZIkr5iBqZIkreiCwaCpiZIkr5iRaZIkreiGwaC5SZIkr5ihKZIkreiKw6EKEyBJXzFnvkSWu6I3Aohs9R5a4gn4jS1zRI4FFV3qMLHEF/9ZbZIkreiWw6E5PkSWu4Pt6iSxxRc8EFl3qIbLEFTxZ68gSV/ROYNGtlpElruDZWkWWuCICgUXXWkSWuILdqx1Z4oooBBbdqxlZ4gr2rlZkiSsiEViEUCOyxBXs39SRJa6IRmARxpSRJa5gdVNFlrgiIoFFKFNElriCckpHlrgiKoFFOCUjS1xBeaUiS1wRmcAipBKRFTWuLp06uXzz1c1l6zmo481XN5eXTp0Md71XjSxxRXQCi7BWiayocfXBqdeXpw7dThdevJlE1vjefHVzeeHFm+nUodvpg1Ovh7ve+40sccUIBBah7SeyIsfViUN3UkopHVwsRdbgclwdXPzrEp84dGcWkSWuGIXAIry9RNYIcZWJrHE9GlfZ6JElrhiJwGIIu4mskeIqE1njeVJcZaNGlrhiNAKLYTwtskaMq0xkjeNZcZWNFlniihEJLIbyuMgaOa4ykRXfbuMqGyWyxBWjElgM5+HImkNcZSIrrr3GVRY9ssQVI7OooTP7iauH3Vsu0vlvX0iffdn2ofX1W6+EePC//OlXTX9P+42rh23fPZzObF11P4eOOMGCjqwaVyk5yYqkRFylFPckC0YmsKATJeIqE1n9KxVXmciCvggs6EDJuMpEVr9Kx1UmsqAfAgsamyKuMpHVn6niKhNZ0AeBBQ1NGVeZyOrH1HGViSxoT2BBIzXiKhNZ7dWKq0xkQVsCCxqoGVeZyGqndlxlIgvaEVhQWYu4ykRWfa3iKhNZ0IbAgopaxlUmsuppHVeZyIL6BBZU0kNcZSJrer3EVSayoC6BBRX0FFeZyJpOb3GViSyoR2DBxHqMq0xklddrXGUiC+oQWDChnuMqE1nl9B5XmciC6QksmEiEuMpE1uqixFUmsmBaAgsmECmuMpG1f9HiKhNZMB2BBYVFjKtMZO1d1LjKRBZMQ2BBQZHjKhNZuxc9rjKRBeUJLChkhLjKRNazjRJXmciCsgQWFDBSXGUi68lGi6tMZEE5AgtWNGJcZSLr+0aNq0xkQRkCC1Zw6dTJYeMqy5H1zmsi653Xxo6r7MShO+nSqZNjf0iYmMCCFXx+52C6t1y0HmNyBxfL9Nsf3Ejnjp+e7UP33PHTy9/+4MbwcZVSSveWi/T5nYOtx4DQBBas4LMvLy/Of/vCLCIrpZTeXbs1y8g6d/z08t21W63HqOLecpHOf/tC+uzLy/NY1DARgQUrElljE1fAfggsKEBkjUlcAfslsKAQkTUWcQWsQmBBQSJrDOIKWJXAgsJEVmziCihBYMEERFZM4gooRWDBRERWLOIKKElgwYREVgziCijNBoMKRv//dY/65PbR9PaR71qPsSuRZl2VuIJ6bDKoZG6RRV/EFdTlFSFUMrfXhfRDXEF9AgsqElnUJq6gDYEFlYksahFX0I7AggZEFlMTV9CWwIJGRBZTEVfQnsCChkQWpYkr6IPAgsZEFqWIK+iHwIIOiCxWJa6gLwILOiGy2C9xBf0RWNARkcVeiSvok8CCzogsdktcQb8EFnRIZPEs4gr6JrCgUyKLJxFX0D+BBR0TWTxKXEEMAgs6J7LIxBXEIbAgAJGFuIJYBBYEIbLmS1xBPAILAvnsy8uLP9x4ofUYVPaHG+IKohFYEMzHX1xefLiz3noMKvlwZz19/IW4gmgEFgR08doVkTUDH+6sp4vXrogrCEhgQVAia2ziCmITWBCYyBqTuIL4BBYEJ7LGIq5gDAILBiCyxiCuYBwCCwYhsmITVzAWgQUDEVkxiSsYj8CCwYisWMQVjMmmDu6XP/rx8hdHb7YeY8/+dHs9/X7bQ2VK546fXr67dqv1GDyFuJreb06cXv7PkXj7wD0yPidYMKiL164sPrl9tPUYPMEnt4+KKxjYgdYDQCtfv/XKsvUM0/uu9QA8wdtHvktvz2ANvvzpVyKSWXKCBQBQmMACAChMYAEAFCawAAAKE1gAAIUJLACAwgQWAEBhAgsAoDCBBQBQmMACAChMYAEAFCawAAAKE1gAAIUJLACAwgQWAEBhAgsAoDCBBQBQmMACAChMYAEAFCawAAAKE1gAAIUJLACAwgQWAEBhAgsAoDCBBQBQmMACAChMYAEAFCawAAAKE1gAAIUJLACAwgQWAEBhAgsAoDCBBQBQmMACAChMYAEAFCawAAAKE1gAAIUJLACAwgQWAEBhAgsAoDCBBQBQ2IHWA0ArL3/61aL1DFN778Sp5dtHvms9Bo/xye2j6b3treHXIMyVEywY1Lnjp8VVx94+8l06d/z0svUcwDT89QQDOnf89PLdtVutx2AXPtxZTxevXXEvhsE4wYLBiKtY3l275SQLBiSwYCDiKiaRBeMRWDAIcRWbyIKxCCwYgLgag8iCcQgsCE5cjUVkwRgEFgQmrsYksiA+gQVBiauxiSyITWBBQOJqHkQWxCWwIJh3XtsUVzPy7tqt9M5rmyILghFYEMibr24uf33sZusxqOzXx26mN18VWRCJwIIg3nx1c3nhxZvp4MJzdm4OLpbpwosiCyIRWBCAuEJkQSwCCzonrshEFsQhsKBj4opHiSyIQWBBp8QVTyKyoH8CCzokrngWkQV9E1jQGXHFboks6JfAgo6IK/ZKZEGfBBZ0QlyxXyIL+iOwoAPiilWJLOiLwILGxBWliCzoh8CChsQVpYks6IPAgkbEFVMRWdCewIIGxBVTE1nQlsCCysQVtYgsaEdgQUXiitpEFrQhsKAScUUrIgvqE1hQwdzi6pPbR1uPsGuRZl2FyIK6BBZMbG5x9eHOenpve2vReo7dem97a/HhznrrMaoQWVCPwIIJzTGuLl67EiausovXrogsoCiBBRMRV7GILKAkgQUTEFcxiSygFIEFhYmr2EQWUILAgoLE1RhEFrAqgQWFiKuxiCxgFQILChBXYxJZwH4JLFiRuBqbyAL2Q2DBCsTVPIgsYK8EFqzg5OF7s4ire8tF+t0/js0yrrKL164sfvePY+necvxfwcHFMp08fK/1GBCawIIVnN36fLF993DrMSZ1b7lI5799IX38xeXxy+IZPv7i8uL8ty8MH1nbdw+ns1ufj/0hYWICC1Z0ZuvqsJGV4+qzL8VV9tmXY0fW9t3D6czW1TE/HFQksKCAESNLXD3ZqJElrqAcgQWFjBRZ4urZRosscQVlCSwoaITIEle7N0pkiSsoT2BBYZEjS1ztXfTIElcwDYEFE4gYWeJq/6JGlriC6QgsmEikyBJXq4sWWeIKpiWwYEIRIktclRMlssQVTE9gwcR6jixxVV7vkSWuoA6BBRX0GFniajq9Rpa4gnoEFlTSU2SJq+n1FlniCuoSWFBRD5ElrurpJbLEFdQnsKCylpElruprHVniCtoQWNBAi8gSV+20iixxBe0ILGikZmSJq/ZqR5a4grYEFjRUI7LEVT9qRZa4gvYEFjQ2ZWSJq/5MHVniCvogsKADU0SWuOrXVJElrqAfAgs6UTKyxFX/SkeWuIK+CCzoSInIEldxlIoscQX9EVgMaWNjc/n3n/xw+avjp5etZ9mrVSJLXMWzamRFjatfHT+9/PtPfrjc2NgMt0dhNwQWw9nY2FxeemknHXvufvr52q00l8gSV3HtN7Iix9XP126lY8/dT5de2kkiixEJLIbycFxlc4gscRXfXiMrelxlIotRCSyG8bi4ykaOLHE1jt1G1ihxlYksRiSwGMLT4iobMbLE1XieFVmjxVUmshiNwCK83cRVNlJkiatxPSmyRo2rTGQxEoFFaHuJq2yEyBJX43s0skaPq0xkMQqBRVj7iasscmRt3T0irmYiR9bW3SOziKtMZDGCcBsWUlotrh720c56ev/aFftgAl+/9UqIh+PLn37l+k9gv3H1sBsPDqSz36yl69f9MUE8TrAIp1RcpRT3JAt6ViKuUnKSRWwCi1BKxlUmsqCcUnGViSyiEliEMUVcZSILVlc6rjKRRUQCixCmjKtMZMH+TRVXmcgiGoFF92rEVSayYO+mjqtMZBGJwKJrNeMqE1mwe7XiKhNZRCGw6FaLuMpEFjxb7bjKRBYRCCy61DKuMpEFT9YqrjKRRe8EFt3pIa4ykQXf1zquMpFFzwQWXekprjKRBf/WS1xlIoteCSy60WNcZSIL+ourTGTRI4FFF3qOq0xkMWe9xlUmsuiNwKK5CHGViSzmqPe4ykQWPRFYNBUprjKRxZxEiatMZNELgUUzEeMqE1nMQbS4ykQWPRBYNBE5rjKRxciixlUmsmht0XoA5meEuHrYRzvr6f1rV+wlhhE9rh5248GBdPabtXT9+mV7lKqcYFHVaHGVkpMsxjJSXKXkJIt2BBbVjBhXmchiBKPFVSayaEFgUcXIcZWJLCIbNa4ykUVtAovJzSGuMpFFRKPHVSayqElgMak5xVUmsohkLnGViSxqEVhMZo5xlYksIphbXGUiixoEFpP52fr9WcZV9t/P32k9AjzVnNfosefup5+tz/f+xPQEFpM5//nfFtt3D7ceo4n83TvQs7PfrKUbDw60HqOJ7buH0/nP/+a7sZiMwGJSZ7auzi6yfLEhUVy/fnkxx8javns4ndm6an8yKYHF5OYUWeKKaOYWWeKKWgQWVcwhssQVUc0lssQVNQksqhk5ssQV0Y0eWeKK2gQWVY0YWeKKUYwaWeKKFgQW1Y0UWeKK0YwWWeKKVgQWTYwQWeKKUY0SWeKKlgQWzUSOLHHF6KJHlriiNYFFUxEjS1wxF1EjS1zRA4FFc5EiS1wxN9EiS1zRC4FFFyJElrhirqJElriiJwKLbvQcWeKKues9ssQVvRFYdKXHyBJX8C+9Rpa4okcCi+70FFniCv5Tb5ElruiVwKJLPUSWuILH6yWyxBU9E1h0q2VkiSt4utaRJa7oncCiay0iS1zB7rSKLHFFBAKL7tWMLHEFe1M7ssQVUQgsQqgRWeIK9qdWZIkrIhFYhDFlZIkrWM3UkSWuiEZgEcoUkSWuoIypIktcEZHAIpySkSWuoKzSkSWuiEpgEVKJyBJXMI1SkSWuiMzCJbQPTr2+PHHozp5/TlxN5zcnTi9bz7Afv9++Yi0UtrGxubz00k469tz9Pf+suCI6i5fw9hpZ4mpaX7/1SsjAevnTr6yHCewnssQVI/CKkPD28rpQXEFde31dKK4YhcBiCLuJLHEFbew2ssQVIxFYDONpkSWuoK1nRZa4YjQCi6E8LrLEFfThSZElrhiRwGI4D0eWuIK+PBpZ4opRCSyGdGbr6uIv/1wTV9ChHFl/+eeauGJYFjZQlK9pAHCCBQBQnMACAChMYAEAFCawAAAKE1gAAIUJLACAwgQWAEBhAgsAoDCBBQBQmMACAChMYAEAFCawAAAKE1gAAIUJLACAwgQWAEBhAgsAoDCBBQBQmMACAChMYAEAFCawAAAKE1gAAIUJLACAwgQWAEBhAgsAoDCBBQBQmMACAChMYAEAFCawAAAKE1gAAIUJLACAwgQWAEBhAgsAoDCBBQBQmMACAChMYAEAFCawAAAKE1gAAIUdaD0AMJY/3V5vPQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAM5f8BPrEepnHCna0AAAAASUVORK5CYII=" alt="Ecotone" class="nav-logo-img"><span class="nav-brand">ecotone</span></div><ul><li class="nav-h1"><a href="#executive-summary">1. Executive Summary</a></li><li class="nav-h2"><a href="#overview-of-the-topic">Overview of the Topic</a></li><li class="nav-h2"><a href="#headline-value-proposition">Headline Value Proposition</a></li><li class="nav-h2"><a href="#key-insights">Key Insights</a></li><li class="nav-h2"><a href="#defined-sroi-scope-high-level">Defined SROI Scope
+(High-Level)</a></li><li class="nav-h2"><a href="#recommended-sroi-focus-areas">Recommended SROI Focus Areas</a></li><li class="nav-h2"><a href="#key-risks-and-uncertainties">Key Risks and Uncertainties</a></li><li class="nav-h1"><a href="#topic-overview-strategic-context">2. Topic Overview &
+Strategic Context</a></li><li class="nav-h2"><a href="#topic-definition">Topic Definition</a></li><li class="nav-h2"><a href="#alignment-with-saudi-vision-2030">Alignment with Saudi Vision
+2030</a></li><li class="nav-h2"><a href="#strategic-relevance-to-wave">Strategic Relevance to WAVE</a></li><li class="nav-h2"><a href="#linkages-to-other-focus-areas">Linkages to Other Focus
+Areas</a></li><li class="nav-h1"><a href="#intervention-landscape">3. Intervention Landscape</a></li><li class="nav-h2"><a href="#intervention-categories">Intervention Categories</a></li><li class="nav-h2"><a href="#system-boundaries">System Boundaries</a></li><li class="nav-h2"><a href="#initial-portfolio-of-interventions">Initial Portfolio of
+Interventions</a></li><li class="nav-h2"><a href="#landscape-observations">Landscape Observations</a></li><li class="nav-h1"><a href="#evidence-review-key-insights">4. Evidence Review & Key
+Insights</a></li><li class="nav-h2"><a href="#summary-of-evidence">Summary of Evidence</a></li><li class="nav-h2"><a href="#what-drives-impact">What Drives Impact</a></li><li class="nav-h2"><a href="#evidence-strength-and-gaps">Evidence Strength and Gaps</a></li><li class="nav-h2"><a href="#key-insights-1">Key Insights</a></li><li class="nav-h1"><a href="#value-creation-across-the-topic">5. Value Creation Across the
+Topic</a></li><li class="nav-h2"><a href="#core-investment-value-pathways">Core Investment Value
+Pathways</a></li><li class="nav-h2"><a href="#tourism-as-a-value-aggregator">Tourism as a Value
+Aggregator</a></li><li class="nav-h1"><a href="#prioritization-sroi-scope-definition">6. Prioritization &
+SROI Scope Definition</a></li><li class="nav-h2"><a href="#portfolio-of-proposed-interventions">Portfolio of Proposed
+Interventions</a></li><li class="nav-h2"><a href="#summary-of-selected-intervention-types">Summary of Selected
+Intervention Types</a></li><li class="nav-h2"><a href="#defined-scope-boundaries">Defined Scope Boundaries</a></li><li class="nav-h1"><a href="#stakeholder-value-mapping">7. Stakeholder Value Mapping</a></li><li class="nav-h2"><a href="#key-stakeholders">Key Stakeholders</a></li><li class="nav-h2"><a href="#value-distribution">Value Distribution</a></li><li class="nav-h1"><a href="#logic-model-for-the-topic">8. Logic Model for the Topic</a></li><li class="nav-h2"><a href="#summary-logic-model">Summary Logic Model</a></li><li class="nav-h2"><a href="#key-causal-pathways">Key Causal Pathways</a></li><li class="nav-h1"><a href="#sroi-design-foundations">9. SROI Design Foundations</a></li><li class="nav-h2"><a href="#intervention-1-coral-gardening-and-outplanting-1">Intervention
+1: Coral Gardening and Outplanting</a></li><li class="nav-h2"><a href="#intervention-2-mangrove-restoration">Intervention 2: Mangrove
+Restoration</a></li><li class="nav-h2"><a href="#intervention-3-advanced-wastewater-treatment">Intervention 3:
+Advanced Wastewater Treatment</a></li><li class="nav-h2"><a href="#intervention-4-green-stormwater-infrastructure-1">Intervention
+4: Green Stormwater Infrastructure</a></li><li class="nav-h2"><a href="#intervention-5-reef-positive-seafood-procurement">Intervention
+5: Reef-Positive Seafood Procurement</a></li><li class="nav-h2"><a href="#intervention-6-local-workforce-development">Intervention 6:
+Local Workforce Development</a></li><li class="nav-h2"><a href="#intervention-7-coastal-community-micro-enterprise-incubator-1">Intervention
+7: Coastal Community Micro-Enterprise Incubator</a></li><li class="nav-h2"><a href="#intervention-8-ghost-gear-recovery">Intervention 8: Ghost Gear
+Recovery</a></li><li class="nav-h2"><a href="#cross-cutting-sroi-design-considerations">Cross-Cutting SROI
+Design Considerations</a></li><li class="nav-h1"><a href="#realizing-the-business-case-implementation-governance-and-scale">10.
+Realizing the Business Case: Implementation, Governance, and Scale</a></li><li class="nav-h1"><a href="#strategic-implications-business-case">11. Strategic Implications
+& Business Case</a></li><li class="nav-h2"><a href="#strategic-importance-for-wave">Strategic Importance for
+WAVE</a></li><li class="nav-h2"><a href="#key-takeaways">Key Takeaways</a></li><li class="nav-h1"><a href="#next-steps">12. Next Steps</a></li><li class="nav-h2"><a href="#finalize-the-sroi-scope">1. Finalize the SROI Scope</a></li><li class="nav-h2"><a href="#collect-priority-data-for-monetization">2. Collect Priority Data
+for Monetization</a></li><li class="nav-h2"><a href="#build-the-sroi-model-and-document-assumptions">3. Build the SROI
+Model and Document Assumptions</a></li><li class="nav-h2"><a href="#review-assumptions-and-preliminary-results-with-stakeholders">4.
+Review Assumptions and Preliminary Results with Stakeholders</a></li><li class="nav-h2"><a href="#finalize-the-sroi-outputs">5. Finalize the SROI Outputs</a></li><li class="nav-h1"><a href="#appendix">13. Appendix</a></li><li class="nav-h2"><a href="#a.-regenerative-tourism-principles-earthcheck-framework">A.
+Regenerative Tourism Principles (EarthCheck Framework)</a></li><li class="nav-h2"><a href="#b.-key-definitions">B. Key Definitions</a></li><li class="nav-h2"><a href="#c.-logic-model">C. Logic Model</a></li><li class="nav-h2"><a href="#d.-sources-referenced">D. Sources Referenced</a></li></ul></nav>
+<div id="main">
+<table class="cover-table">
+<colgroup>
+<col style="width: 32%"/>
+<col style="width: 67%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th colspan="2"></th>
+</tr>
+<tr class="odd">
+<th><p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA94AAAEbCAYAAAAs11wFAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAD3qADAAQAAAABAAABGwAAAADEsRiuAABAAElEQVR4AeydCXxU1dn/z7kzkwQUBLcuigJJ0IprUTJBW9G2WlshCUr/bd3bt621m93r29a1i13t20Vba63Vam2jJAGt1rpgVZKAuFOFZEABl1oVFIEkM3PP/3eGDIaQZZZ7ztx753c/H5jJXZ7nOd8z997zO6sU3EiABEiABEiABEiABEiABEiABAJNoLuxvlUI1WAiETWtHdKE3XKy6ZRTYplWEiABEiABEiABEiABEiABEiABErBNgMLbNnH6IwESIAESIAESIAESIAESIAESKCsCFN5lld1MLAmQAAmQAAmQAAmQAAmQAAmQgG0CFN62idMfCZAACZAACZAACZAACZAACZBAWRGg8C6r7GZiSYAESIAESIAESIAESIAESIAEbBOg8LZNnP5IgARIgARIgARIgARIgARIgATKigCFd1llNxNLAiRAAiRAAiRAAiRAAiRAAiRgmwCFt23i9EcCJEACJEACJEACJEACJEACJFBWBCi8yyq7mVgSIAESIAESIAESIAESIAESIAHbBCi8bROnPxIgARIgARIgARIgARIgARIggbIiQOFdVtnNxJIACZAACZAACZAACZAACZAACdgmQOFtmzj9kQAJkAAJkAAJkAAJkAAJkAAJlBUBCu+yym4mlgRIgARIgARIgARIgARIgARIwDYBCm/bxOmPBEiABEiABEiABEiABEiABEigrAhQeJdVdjOxJEACJEACJEACJEACJEACJEACtglQeNsmTn8kQAIkQAIkQAIkQAIkQAIkQAJlRYDCu6yym4klARIgARIgARIgARIgARIgARKwTYDC2zZx+iMBEiABEiABEiABEiABEiABEigrAhTeZZXdTCwJkAAJkAAJkAAJkAAJkMBwBBIN9Yd0N8Xv7Zr/nr2GO4f7/U9ACSG7G+JXJZrqvuWXaCm8/ZITjIMESIAESIAESIAESIAESKBkBLToVlLdK5Q4TiaTFN8ly4niHGvRnWiIXymkOFcp+UO/iG8K7+LylVeTAAmQAAmQAAmQ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AiRAAiRAAiRQTgRqF3SuV46ajTQnyindQ6TVRRvwR2oXdiwc4lgod1F4hzJbmSgSIAESIAESIAESIAESIAE/EqD4Fq6U4sya1vZWP+aPqZjY1dwUWdolARIgARIgARIgARIgARIggWEIdDccNUnISBcOVw5zSlh3f7OmtePHYU3ccOlii/dwZLifBEiABEiABEiABEiABEiABAwRqGlbtk46zntgPmnIhe/MKiGuKkfRrTOCLd6++zkyIBIgARIgARIgARIgARIggXIhkJg36yjlug8hvbEwp1mL7trWjvPCnMaR0kbhPRIdHiMBEiABEiABEiABEiABEiABwwTCLr7LXXTrnw+Ft+GbiOZJgARIgARIgARIgARIgARIYDQCYRXfFN3bcp7Ce7Q7gMdJgARIgARIgARIgARIgASMEuhqjN8IYfJhE04wpniCCbsmbGKd77h05YOwHTFh37bNoIluk7/DqG349EcCJEACJEACJEACJEACJEACAwlIIXcRQu02cJ8fvifmz9hNJWPPeRyLHss9ZkibWN06RJtCZcq53Y3xc4dJUxr7Nw9zrKDdUsnzqtvabyroYlxk8ndI4V1orvA6EiABEiABEiABEiABEiCBUBNwkuNkWvT4rkIgINBH612ttainbJVUFX5lw+XE/JozjIsESIAESIAESIAESIAESIAESCAUBCi8Q5GNTAQJkAAJkAAJkAAJkAAJkAAJkIBfCVB4+zVnGBcJkAAJkAAJkAAJkAAJkAAJkEAoCFB4hyIbmQgSIAESIAESIAESIAESIAESIAG/EqDw9mvOMC4SIAESIAESIAESIAESIAESIIFQEKDwDkU2MhEkQAIkQAIkQAIkQAIkQAIkQAJ+JUDh7decYVwkQAIkQAIkQAIkQAIkQAIkQAKhIEDhHYpsZCJIgARIgARIgARIgARIgARIgAT8SoDC2685w7hIgARIgARIgARIgARIgARIgARCQYDCOxTZyESQAAmQAAmQAAmQAAmQAAmQAAn4lQCFt19zhnGRAAmQAAmQAAmQAAmQAAmQAAmEggCFdyiykYkgARIgARIgARIgARIgARIgARLwKwEKb7/mDOMiARIgARIgARIgARIgARIgARIIBQEK71BkIxNBAiRAAiRAAiRAAiRAAiRAAiTgVwIU3n7NGcZFAiRAAiRAAiRAAiRAAiRAAiQQCgIU3qHIRiaCBEiABEiABEiABEiABEiABEjArwQovP2aM4yLBEiABEiABEiABEiABEiABEggFAQovEORjUwECZAACZAACZAACZAACZAACZCAXwlE/RoY4yIBEiABEiABEiABEiABEiCBUhJI9W51ZaV8zuMYxsLexBFsShyLjHA8KIdcBKr/Dbkhkb1KiFeGPFjgTqXUmwVeavwyCm/jiOmABEiABEiABEiABEiABEhgRAJKvSyk8Frgjugyl4O1d3S+gfMm53KuF+ckGuvfp4T6hxe2fGDDgbD+XW1rx3k+iCW3EAz+DnVtCjcSIAESIAESIAESIAESIAESIIESEhggusPQ2r2dJMT3VYES39sj9/YLhbe3PGmNBEiABEiABEiABEiABEiABPIiEFbRnYVA8S3QoYMbCZAACZAACZAACZAACZAACZBASQiEXXRnoZa7+Kbwzv4S+EkCJEACJEACJEACJEACJEACFgmUi+jOIi1n8U3hnf0V8JMESIAESIAESIAESIAESIAELBFInFJXq9JyBdzFLLn0hRslxVdrWzp+7otgLAbBdbwtwqYrEiABEiABEiABEiABEiABEuieW1+jXHkfSJSV6NY5L5X4SaIpflq5/QrY4l1uOc70kgAJkAAJkAAJkAAJkAAJlIyAFt0iohYLJfYpWRCld+xKKc6sbum4sfSh2ImAwtsOZ3ohARIgARIgARIgARIgARIocwIU3Tv8AMpKfFN475D3/IMESIAESIAESIAESIAESIAEvCdA0T0k07IR3xTeQ+Y/d5IACZAACZAACZAACZAACZCANwQoukfkWBbim8J7xN8AD5IACZAACZAACZAACZAACZBA4QQounNiF3rxTeGd0++AJ5EACZAACZAACZAACZAACZBAfgQouvPiFWrxTeGd12+BJ5MACZAACZAACZAACZAACZDA6AQoukdnNMQZoRXfXMd7iNzmLhIgARIgARIgARIgARIgARIolEAJRXdfoTGPcF16hGNeH3KUEteHcZ1vCm+vfyq0RwIkQAIkQAIkQAIkQAIkULYESia6lbhZCLXFa/BSyTNhk+K7SLAU3kUC5OUkQAIkQAIkQAIkQAIkQAIkoAmUUnTXtHV8zEQuyIh8SAp5ImxTfBcBmMK7CHi8lARIgARIgARIgARIgARIgAQ0gTCK7mzOVre230PxnaVR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" style="width:1.79688in;height:0.51968in"/></p>
+<p><strong>Report Type</strong></p>
+<p>Value Proposition &amp; SROI Scope</p>
+<p><strong>Client</strong></p>
+<p>WAVE</p>
+<p><strong>Phase</strong></p>
+<p>Phase 1: Topic Assessment &amp; SROI Scope Definition</p>
+<p><strong>Date</strong></p>
+<p>May 2026</p>
+<p><strong>Status</strong></p>
+<p>Confidential</p>
+<p>ecotoneanalytics.com</p>
+<p>contact@ecotone-partners.com</p></th>
+<th><p>Value Proposition Report for:</p>
+<p><strong>WAVE</strong></p>
+<p><strong>Regenerative Coastal</strong></p>
+<p><strong>&amp; Ocean Tourism</strong></p>
+<p>This report assesses the value proposition for WAVE's regenerative
+tourism pillar within Saudi Arabia's Red Sea ecosystem, and defines the
+scope and rationale for a targeted Social Return on Investment (SROI)
+analysis.</p>
+<p><strong>Sectors covered:</strong> Coastal &amp; marine tourism ·
+Ecosystem restoration · Community development</p>
+<p><strong>Geography:</strong> Red Sea Coastline, Kingdom of Saudi
+Arabia</p></th>
+</tr>
+<tr class="header">
+<th colspan="2">Prepared by Ecotone Partners | May 2026 |
+Confidential</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<h1 id="executive-summary">1. Executive Summary</h1>
+<h2 id="overview-of-the-topic">Overview of the Topic</h2>
+<p>Regenerative coastal and ocean tourism represents a transformative
+approach to hospitality development in sensitive marine environments.
+Unlike conventional or sustainability-focused tourism — which aims to
+reduce harm — regenerative tourism actively improves baseline ecological
+and social conditions. This report assesses the value proposition for
+WAVE's regenerative tourism pillar within Saudi Arabia's Red Sea
+ecosystem, and defines the scope and rationale for a targeted Social
+Return on Investment (SROI) analysis.</p>
+<p>Saudi Arabia's coastal hospitality sector is expanding rapidly,
+presenting both risk and opportunity: under business-as-usual
+conditions, tourism growth can accelerate reef degradation, community
+displacement, and ecological loss. Regenerative interventions offer a
+pathway to reverse this trajectory while building a compelling,
+evidence-based business case for hospitality operators.</p>
+<h2 id="headline-value-proposition">Headline Value Proposition</h2>
+<p>Regenerative tourism interventions in coastal Saudi Arabia can
+simultaneously preserve long-term asset value, reduce operational and
+environmental risk, attract premium market segments, and generate
+measurable positive outcomes for local ecosystems and communities. This
+creates a compounding return that conventional tourism models are
+structurally unable to replicate.</p>
+<h2 id="key-insights">Key Insights</h2>
+<ul>
+<li>
+<p>Evidence supports monetizable value to the hospitality sector across
+coral restoration, mangrove rehabilitation, sustainable seafood
+procurement, and community co-management — each linked to tourism
+revenue, avoided costs, and long-term asset durability.</p>
+</li>
+<li>
+<p>Regenerative interventions go beyond sustainability by improving
+baselines. For example, restored reefs increase diver
+willingness-to-pay, mangroves reduce flood damage, and sustainable
+fisheries secure a local value chain that builds authentic destination
+identity.</p>
+</li>
+<li>
+<p>Intangible social values — including local identity, cultural
+stewardship, and pride of place — are necessary components of a complete
+impact picture, even if the estimated size of this value is unclear.</p>
+</li>
+</ul>
+<h2 id="defined-sroi-scope-high-level">Defined SROI Scope
+(High-Level)</h2>
+<p>The SROI will focus on a representative portfolio of eight investable
+interventions voluntarily adoptable by hospitality sector operators in
+coastal Saudi Arabia. Analysis will draw on international case studies
+to estimate potential impact in the Red Sea context, with explicit
+attention to pathways linking ecological change to economic and social
+value. Public policies and enabling-only interventions (such as data
+monitoring and guest engagement) are excluded from the core SROI scope
+but will be included as part of the narrative.</p>
+<h2 id="recommended-sroi-focus-areas">Recommended SROI Focus Areas</h2>
+<p>Based on Ecotone's evidence review, the eight interventions
+recommended for inclusion in the projected SROI of regenerative tourism
+include:</p>
+<ul>
+<li>
+<p>Coral gardening and outplanting (direct reef restoration)</p>
+</li>
+<li>
+<p>Mangrove restoration and native coastal habitat regeneration</p>
+</li>
+<li>
+<p>Advanced wastewater treatment</p>
+</li>
+<li>
+<p>Green stormwater infrastructure</p>
+</li>
+<li>
+<p>Reef-positive seafood procurement with fisher co-management</p>
+</li>
+<li>
+<p>Ghost gear recovery</p>
+</li>
+<li>
+<p>Local community micro-enterprise incubation</p>
+</li>
+<li>
+<p>Local workforce development programs tied to regenerative programs
+for hotel employees</p>
+</li>
+</ul>
+<h2 id="key-risks-and-uncertainties">Key Risks and Uncertainties</h2>
+<ul>
+<li>
+<p>Long time horizons for coral and mangrove regeneration may result in
+lower near-term SROI ratios.</p>
+</li>
+<li>
+<p>It will be unclear the extent to which qualitative social value
+complements and adds to the quantitative estimates.</p>
+</li>
+<li>
+<p>Transferability of international evidence to the Red Sea context
+requires careful assumption-setting and sensitivity analysis.</p>
+</li>
+<li>
+<p>Governance continuity risk: if hotel ownership changes, regenerative
+practices may be abandoned without appropriate institutional
+structures.</p>
+</li>
+</ul>
+<h1 id="topic-overview-strategic-context">2. Topic Overview &amp;
+Strategic Context</h1>
+<h2 id="topic-definition">Topic Definition</h2>
+<p>Regenerative tourism is a practice that seeks to leave destinations
+in a better state than they were found, drawing inspiration from
+regenerative agriculture's emphasis on restoring ecosystems and
+enhancing biodiversity. More precisely, it is a process through which
+tourism sector stakeholders collectively exert care and guardianship for
+the improvement and enhancement of natural, human, and built elements,
+thereby enabling those elements to exceed their current survivability
+conditions.</p>
+<p>Regenerative coastal tourism specifically focuses on ocean- and
+coastal-connected interventions. Examples include coral reef
+restoration, mangrove rehabilitation, sustainable seafood systems,
+reduction of marine debris, and the empowerment of coastal communities
+as custodians of natural heritage. In contrast to sustainable tourism
+(which targets harm reduction) and business-as-usual tourism (which
+generates ongoing ecological and social cost), regenerative tourism
+improves baseline conditions through direct intervention and systemic
+change.</p>
+<h2 id="alignment-with-saudi-vision-2030">Alignment with Saudi Vision
+2030</h2>
+<p>Regenerative coastal tourism is strongly aligned with Saudi Arabia's
+Vision 2030, particularly its objectives to diversify the economy,
+expand the tourism sector, and protect national natural assets. Vision
+2030 identifies tourism as a strategic growth sector, with a target of
+increasing its contribution to GDP and positioning Saudi Arabia as a
+global destination. At the same time, it emphasizes environmental
+sustainability, quality of life, and the preservation of cultural and
+natural heritage.</p>
+<p>In this context, regenerative tourism offers a pathway to reconcile
+rapid tourism development with long-term ecosystem health. By embedding
+restoration, community participation, and natural capital enhancement
+into tourism models, regenerative approaches directly support Vision
+2030 priorities related to sustainable economic diversification,
+environmental protection, and the creation of high-value, differentiated
+tourism offerings.</p>
+<h2 id="strategic-relevance-to-wave">Strategic Relevance to WAVE</h2>
+<p>WAVE's regenerative tourism strategy is anchored in the Red Sea
+ecosystem of Saudi Arabia, one of the most biodiverse marine
+environments and thermally resilient coral ecosystems on the planet. The
+strategy aims to build a compelling business case for the hospitality
+sector to voluntarily adopt interventions that deliver measurable
+ecological and community benefit, creating a replicable model for
+nature-positive tourism development.</p>
+<p>WAVE's focus areas span ocean ecosystem health (coral, mangroves,
+water quality), local community empowerment, green infrastructure,
+sustainable supply chains, and data monitoring innovations. This SROI
+work is designed to translate these interventions into rigorous,
+evidence-based value estimates that hospitality operators, investors,
+and policymakers can act on.</p>
+<p class="tbl-label"><strong>Table 1: WAVE's Regenerative Tourism Focus Areas</strong></p>
+<table class="data-table">
+<colgroup>
+<col style="width: 21%"/>
+<col style="width: 32%"/>
+<col style="width: 46%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th class="tbl-hdr"><strong>Wave Focus Area</strong></th>
+<th class="tbl-hdr"><strong>Definition</strong></th>
+<th class="tbl-hdr"><strong>Regenerative Intent</strong></th>
+</tr>
+<tr class="odd">
+<th class="tbl-hdr"><strong>Sustainable Food System &amp; Supply Chain</strong></th>
+<th class="tbl-hdr">Local, regenerative sourcing that strengthens ecosystems and supply
+resilience.</th>
+<th class="tbl-hdr">Improves soils, marine systems, and local livelihoods beyond
+baseline.</th>
+</tr>
+<tr class="header">
+<th class="tbl-hdr"><strong>Renewable Energy</strong></th>
+<th class="tbl-hdr">Transition to clean, low-carbon energy systems.</th>
+<th class="tbl-hdr">Contributes to broader decarbonization beyond the site
+footprint.</th>
+</tr>
+<tr class="odd">
+<th class="tbl-hdr"><strong>Circular Waste &amp; Resource Management</strong></th>
+<th class="tbl-hdr">Eliminate waste through reuse, recycling, and biological return
+flows.</th>
+<th class="tbl-hdr">Creates closed loops that reduce extraction and help restore natural
+systems.</th>
+</tr>
+<tr class="header">
+<th class="tbl-hdr"><strong>Guest Engagement in Biodiversity &amp;
+Regeneration</strong></th>
+<th class="tbl-hdr">Involve guests in restoration and ecological learning.</th>
+<th class="tbl-hdr">Turns guests into contributors to regenerative outcomes, whether
+directly via their actions or indirectly via their funds.</th>
+</tr>
+<tr class="odd">
+<th class="tbl-hdr"><strong>Sustainable &amp; Resilient Infrastructure</strong></th>
+<th class="tbl-hdr">Design infrastructure to minimize impact and adapt to local
+conditions.</th>
+<th class="tbl-hdr">Integrates with natural systems and enhances long-term resilience,
+in some cases restoring the natural function of landscapes.</th>
+</tr>
+<tr class="header">
+<th class="tbl-hdr"><strong>Data Monitoring</strong></th>
+<th class="tbl-hdr">Track and use data to guide environmental and social
+performance.</th>
+<th class="tbl-hdr">Enables adaptive management and measurable improvement over
+time.</th>
+</tr>
+<tr class="odd">
+<th class="tbl-hdr"><strong>Regenerative Ecosystem</strong></th>
+<th class="tbl-hdr">Restore and enhance ecosystems beyond baseline conditions.</th>
+<th class="tbl-hdr">Delivers net-positive biodiversity and ecosystem health outcomes for
+coral reefs, seagrass, mangroves, among others.</th>
+</tr>
+<tr class="header">
+<th class="tbl-hdr"><strong>Community Co-Creation &amp; Engagement</strong></th>
+<th class="tbl-hdr">Partner with communities in design, delivery, and
+benefit-sharing.</th>
+<th class="tbl-hdr">Builds shared value, local ownership, and stronger social
+systems.</th>
+</tr>
+<tr class="odd">
+<th class="tbl-hdr"><strong>Water Stewardship</strong></th>
+<th class="tbl-hdr">Manage water to protect supply and ecosystem health.</th>
+<th class="tbl-hdr">Improves watershed function, water quality, and long-term
+availability.</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<h2 id="linkages-to-other-focus-areas">Linkages to Other Focus
+Areas</h2>
+<p>Regenerative tourism does not operate in isolation. The interventions
+identified in this report connect to WAVE's broader pillars, including
+blue technology (seawater air conditioning, smart monitoring), circular
+economy (ghost gear upcycling, wastewater reuse), and community
+engagement (workforce development, artisan micro-enterprises). Enabling
+interventions — such as guest engagement programs, citizen science, and
+data monitoring — support the effectiveness of direct interventions but
+are captured narratively rather than included in the core SROI.</p>
+<h1 id="intervention-landscape">3. Intervention Landscape</h1>
+<h2 id="intervention-categories">Intervention Categories</h2>
+<p>Given the breadth of potential interventions associated with coastal
+tourism, a structured screening framework was used to determine which
+actions should be considered within the regenerative tourism portfolio.
+The first step was to distinguish between sustainable and regenerative
+interventions. Sustainable interventions are defined as those that
+reduce negative environmental or social impacts relative to
+business-as-usual conditions, but do not materially improve the baseline
+state present when the operator arrives. Regenerative interventions, by
+contrast, are those that create net-positive outcomes by restoring,
+enhancing, or strengthening ecological and social systems beyond their
+initial condition.</p>
+<p>Regenerative interventions within the portfolio were further
+differentiated between direct and indirect pathways. Direct regenerative
+interventions are those that actively restore, rebuild, or enhance
+ecosystems or communities through the intervention itself. Examples
+include coral gardening and outplanting, mangrove restoration through
+hydrology-first approaches, ghost gear recovery with fisher
+participation, and coastal community micro-enterprise incubation linked
+to traditional boatbuilding and low-impact marine excursions.</p>
+<p>Indirect regenerative interventions, by contrast, enable or
+accelerate regeneration by improving the conditions that allow
+ecosystems or communities to recover naturally or at scale. Examples
+include advanced wastewater treatment beyond compliance, green
+stormwater infrastructure, and desalination brine mitigation. While
+these measures may not restore habitats directly, they can remove
+pressures, improve water quality, and generate the information needed
+for directing investments.</p>
+<p>Interventions were also assessed according to their scale of impact:
+some actions create benefits largely within the footprint of a single
+operator, while others generate benefits that extend beyond the operator
+boundary into surrounding ecosystems, communities, or destination
+economies. Using these three lenses — impact type, pathway, and scale —
+the long list of interventions was categorized into a practical typology
+(Table 2).</p>
+<p class="tbl-label"><strong>Table 2: Impact Typology of Regenerative Tourism
+Interventions</strong></p>
+<table class="data-table">
+<colgroup>
+<col style="width: 16%"/>
+<col style="width: 21%"/>
+<col style="width: 61%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th class="tbl-hdr"></th>
+<th class="tbl-hdr"><strong>Term</strong></th>
+<th class="tbl-hdr"><strong>Definition</strong></th>
+</tr>
+<tr class="odd">
+<th class="tbl-hdr" rowspan="2"><strong>Impact Type</strong></th>
+<th class="tbl-hdr">Sustainable (Harm Reduction)</th>
+<th class="tbl-hdr">Reduces negative environmental or social impacts without improving
+baseline conditions.</th>
+</tr>
+<tr class="header">
+<th class="tbl-hdr"><em>Regenerative (Net-Positive)</em></th>
+<th class="tbl-hdr">Improves environmental or social conditions beyond the baseline
+present at the start of the intervention.</th>
+</tr>
+<tr class="odd">
+<th class="tbl-hdr" rowspan="2"><strong>Pathway</strong></th>
+<th class="tbl-hdr">Direct Regenerative</th>
+<th class="tbl-hdr">Actively restores, rebuilds, or enhances ecosystems or communities
+through the intervention itself.</th>
+</tr>
+<tr class="header">
+<th class="tbl-hdr">Indirect Regenerative</th>
+<th class="tbl-hdr">Enables or accelerates regeneration by improving the conditions that
+allow systems to recover naturally or at scale.</th>
+</tr>
+<tr class="odd">
+<th class="tbl-hdr" rowspan="2"><strong>Scale</strong></th>
+<th class="tbl-hdr">Within Footprint (Localized)</th>
+<th class="tbl-hdr">Impacts are confined to the physical or operational boundary of the
+hospitality developer/operator.</th>
+</tr>
+<tr class="header">
+<th class="tbl-hdr">Beyond Footprint (Systemic)</th>
+<th class="tbl-hdr">Impacts extend beyond the operator's boundary to influence broader
+ecosystems, communities, or economic systems.</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p>With the typology outlined in Table 2, a simple categorization matrix
+can be used to determine whether an intervention is considered
+regenerative or sustainable (Table 3).</p>
+<p class="tbl-label"><strong>Table 3: Regenerative Tourism Intervention Categorization
+Matrix</strong></p>
+<table class="data-table">
+<colgroup>
+<col style="width: 25%"/>
+<col style="width: 16%"/>
+<col style="width: 29%"/>
+<col style="width: 29%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th class="tbl-hdr" colspan="2"><strong>Impact</strong></th>
+<th class="tbl-hdr"><strong>Within Footprint</strong></th>
+<th class="tbl-hdr"><strong>Beyond Footprint</strong></th>
+</tr>
+<tr class="odd">
+<th class="tbl-hdr" colspan="2"><strong>Sustainable (reduce harm)</strong></th>
+<th class="tbl-hdr">Sustainable</th>
+<th class="tbl-hdr"><strong>Regenerative</strong></th>
+</tr>
+<tr class="header">
+<th class="tbl-hdr" rowspan="2"><strong>Regenerative</strong></th>
+<th class="tbl-hdr">Direct (restore)</th>
+<th class="tbl-hdr"><strong>Regenerative</strong></th>
+<th class="tbl-hdr"><strong>Regenerative</strong></th>
+</tr>
+<tr class="odd">
+<th class="tbl-hdr">Indirect (enable)</th>
+<th class="tbl-hdr"><strong>Regenerative</strong></th>
+<th class="tbl-hdr"><strong>Regenerative</strong></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<h2 id="system-boundaries">System Boundaries</h2>
+<p>To keep the analysis decision-useful and focused on what hospitality
+operators can realistically influence, the following boundaries were
+established:</p>
+<p><strong>Included:</strong></p>
+<ul>
+<li>
+<p>Investable, clearly defined interventions voluntarily adoptable by
+hospitality sector operators</p>
+</li>
+<li>
+<p>Ocean- and coastal-connected impact pathways (direct and
+indirect)</p>
+</li>
+<li>
+<p>International evidence base applied to the Red Sea / Saudi Arabia
+context</p>
+</li>
+<li>
+<p>Ecological, social, and economic value streams, including
+non-monetizable outcomes in the narrative</p>
+</li>
+</ul>
+<p><strong>Excluded:</strong></p>
+<ul>
+<li>
+<p>Broad sector-level sustainability claims and public policy
+interventions</p>
+</li>
+<li>
+<p>Giga-project-scale interventions (e.g., NEOM, Red Sea Global) that
+are not replicable by typical operators</p>
+</li>
+<li>
+<p>Enabling-only interventions (data monitoring, guest engagement) from
+the SROI calculation (though included in narrative)</p>
+</li>
+<li>
+<p>Interventions without a credible evidence pathway to monetizable
+outcomes</p>
+</li>
+</ul>
+<h2 id="initial-portfolio-of-interventions">Initial Portfolio of
+Interventions</h2>
+<p>Using the prior boundaries and typology, the identification and
+screening of interventions took place. The screening resulted in a broad
+portfolio of regenerative tourism opportunities aligned with WAVE's
+thematic focus areas. These interventions were assessed based on their
+regenerative potential, evidence maturity, expected impact on ocean
+health and stakeholders, and indicative business-case potential.</p>
+<p class="tbl-label"><strong>Table 4: Regenerative Tourism Intervention Portfolio —
+Screening &amp; Feasibility Assessment</strong></p>
+<table class="data-table">
+<colgroup>
+<col style="width: 11%"/>
+<col style="width: 16%"/>
+<col style="width: 12%"/>
+<col style="width: 12%"/>
+<col style="width: 19%"/>
+<col style="width: 10%"/>
+<col style="width: 14%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th class="tbl-hdr"><strong>Wave's Regen Tourism Focus Areas</strong></th>
+<th class="tbl-hdr"><strong>Intervention</strong></th>
+<th class="tbl-hdr"><strong>Regenerative vs. Sustainable</strong></th>
+<th class="tbl-hdr"><strong>Evidence maturity</strong></th>
+<th class="tbl-hdr"><strong>Impact on Ocean Health</strong></th>
+<th class="tbl-hdr"><strong>Impact on stakeholders</strong></th>
+<th class="tbl-hdr"><strong>Potential ROI (Business Case)</strong></th>
+</tr>
+<tr class="odd">
+<th class="tbl-hdr" rowspan="5">1. Regenerative Ecosystem</th>
+<th class="tbl-hdr"><strong>Coral gardening + outplanting (with accredited
+practitioners)</strong></th>
+<th class="tbl-hdr">Regenerative</th>
+<th class="tbl-hdr">High</th>
+<th class="tbl-hdr">High</th>
+<th class="tbl-hdr">Medium</th>
+<th class="tbl-hdr">Medium</th>
+</tr>
+<tr class="header">
+<th class="tbl-hdr"><strong>Seagrass restoration + protection (moorings/no-anchor +
+planting where suitable)</strong></th>
+<th class="tbl-hdr">Regenerative</th>
+<th class="tbl-hdr">Low–Medium</th>
+<th class="tbl-hdr">High</th>
+<th class="tbl-hdr">Medium</th>
+<th class="tbl-hdr">Medium</th>
+</tr>
+<tr class="odd">
+<th class="tbl-hdr"><strong>Mangrove restoration / assisted natural regeneration
+(hydrology-first + stewardship)</strong></th>
+<th class="tbl-hdr">Regenerative</th>
+<th class="tbl-hdr">High</th>
+<th class="tbl-hdr">High</th>
+<th class="tbl-hdr">High</th>
+<th class="tbl-hdr">High</th>
+</tr>
+<tr class="header">
+<th class="tbl-hdr"><strong>Dark-sky coastal lighting retrofit (turtle/bird-safe) +
+seasonal nesting protection</strong></th>
+<th class="tbl-hdr">Regenerative with conditions</th>
+<th class="tbl-hdr">Low</th>
+<th class="tbl-hdr">Low</th>
+<th class="tbl-hdr">Low</th>
+<th class="tbl-hdr">Medium</th>
+</tr>
+<tr class="odd">
+<th class="tbl-hdr"><strong>Native coastal habitat landscaping + invasive species
+prevention (xeriscape + dune vegetation where appropriate)</strong></th>
+<th class="tbl-hdr">Regenerative with conditions</th>
+<th class="tbl-hdr">Medium</th>
+<th class="tbl-hdr">Medium</th>
+<th class="tbl-hdr">Low</th>
+<th class="tbl-hdr">High</th>
+</tr>
+<tr class="header">
+<th class="tbl-hdr" rowspan="2">2. Water Stewardship</th>
+<th class="tbl-hdr"><strong>Desalination brine impact mitigation (diffusers, siting,
+blending, monitoring) beyond minimum</strong></th>
+<th class="tbl-hdr">Regenerative with conditions</th>
+<th class="tbl-hdr">Medium</th>
+<th class="tbl-hdr">Medium</th>
+<th class="tbl-hdr">Very low</th>
+<th class="tbl-hdr">Medium</th>
+</tr>
+<tr class="odd">
+<th class="tbl-hdr"><strong>Advanced wastewater treatment + nutrient polishing beyond
+compliance (with transparent monitoring)</strong></th>
+<th class="tbl-hdr">Regenerative with conditions</th>
+<th class="tbl-hdr">Very high</th>
+<th class="tbl-hdr">Very high</th>
+<th class="tbl-hdr">Medium</th>
+<th class="tbl-hdr">Very high</th>
+</tr>
+<tr class="header">
+<th class="tbl-hdr" rowspan="2">3. Sustainable and Resilient Infrastructure</th>
+<th class="tbl-hdr"><strong>Green infrastructure for stormwater (Wadi restoration,
+bioswales, permeable surfaces, constructed wetlands)</strong></th>
+<th class="tbl-hdr">Regenerative with conditions</th>
+<th class="tbl-hdr">High</th>
+<th class="tbl-hdr">High</th>
+<th class="tbl-hdr">Low</th>
+<th class="tbl-hdr">Very high</th>
+</tr>
+<tr class="odd">
+<th class="tbl-hdr"><strong>Nature-based shoreline protection (‘living shorelines’,
+dunes, mangroves where appropriate)</strong></th>
+<th class="tbl-hdr">Regenerative</th>
+<th class="tbl-hdr">Very high</th>
+<th class="tbl-hdr">High</th>
+<th class="tbl-hdr">Medium</th>
+<th class="tbl-hdr">Very high</th>
+</tr>
+<tr class="header">
+<th class="tbl-hdr" rowspan="3">4. Guest Engagement in Biodiversity and
+Regeneration</th>
+<th class="tbl-hdr"><strong>Opt-out ‘reef regeneration fee’ (earmarked, transparent,
+outcome-linked)</strong></th>
+<th class="tbl-hdr">Regenerative</th>
+<th class="tbl-hdr">High</th>
+<th class="tbl-hdr">High</th>
+<th class="tbl-hdr">Low</th>
+<th class="tbl-hdr">Very high</th>
+</tr>
+<tr class="odd">
+<th class="tbl-hdr"><strong>Reef-safe moorings + no-anchor enforcement (guests +
+third-party boats)</strong></th>
+<th class="tbl-hdr">Sustainable</th>
+<th class="tbl-hdr">High</th>
+<th class="tbl-hdr">High</th>
+<th class="tbl-hdr">Very low</th>
+<th class="tbl-hdr">High</th>
+</tr>
+<tr class="header">
+<th class="tbl-hdr"><strong>Marine wildlife-safe excursion standards
+(dolphins/whales/rays): distances, speeds, no-feeding + compliance
+monitoring</strong></th>
+<th class="tbl-hdr">Regenerative with conditions</th>
+<th class="tbl-hdr">Medium–High</th>
+<th class="tbl-hdr">Medium</th>
+<th class="tbl-hdr">Low</th>
+<th class="tbl-hdr">High</th>
+</tr>
+<tr class="odd">
+<th class="tbl-hdr" rowspan="2">5. Sustainable Food System and Supply chain</th>
+<th class="tbl-hdr"><strong>‘Reef-positive’ seafood procurement + fisher co-management
+support</strong></th>
+<th class="tbl-hdr">Regenerative</th>
+<th class="tbl-hdr">Low–Medium</th>
+<th class="tbl-hdr">Medium</th>
+<th class="tbl-hdr">High</th>
+<th class="tbl-hdr">Medium</th>
+</tr>
+<tr class="header">
+<th class="tbl-hdr"><strong>Seaweed or bivalve aquaculture partnerships (nutrient
+filtration + livelihoods) where ecologically suitable</strong></th>
+<th class="tbl-hdr">Regenerative with conditions</th>
+<th class="tbl-hdr">Low</th>
+<th class="tbl-hdr">Medium</th>
+<th class="tbl-hdr">High</th>
+<th class="tbl-hdr">Low</th>
+</tr>
+<tr class="odd">
+<th class="tbl-hdr" rowspan="2">6. Community Co-Creation &amp; Engagement</th>
+<th class="tbl-hdr"><strong>Local workforce development programs tied to regenerative
+programs</strong></th>
+<th class="tbl-hdr">Regenerative</th>
+<th class="tbl-hdr">Medium</th>
+<th class="tbl-hdr">Low</th>
+<th class="tbl-hdr">High</th>
+<th class="tbl-hdr">Medium</th>
+</tr>
+<tr class="header">
+<th class="tbl-hdr"><strong>Coastal community micro-enterprise incubator: Traditional
+boatbuilding + low-impact marine excursions</strong></th>
+<th class="tbl-hdr">Regenerative</th>
+<th class="tbl-hdr">Medium</th>
+<th class="tbl-hdr">Medium</th>
+<th class="tbl-hdr">High</th>
+<th class="tbl-hdr">Medium</th>
+</tr>
+<tr class="odd">
+<th class="tbl-hdr" rowspan="2">7. Circular Waste and Resource Management</th>
+<th class="tbl-hdr"><strong>Ghost gear recovery + pay-for-return with local fishers +
+recycling/upcycling</strong></th>
+<th class="tbl-hdr">Regenerative</th>
+<th class="tbl-hdr">Medium-high</th>
+<th class="tbl-hdr">Medium</th>
+<th class="tbl-hdr">High</th>
+<th class="tbl-hdr">Medium</th>
+</tr>
+<tr class="header">
+<th class="tbl-hdr"><strong>Litter interception at outfalls + standardized
+cleanup/monitoring (not one-off events)</strong></th>
+<th class="tbl-hdr">Sustainable</th>
+<th class="tbl-hdr">High</th>
+<th class="tbl-hdr">Medium</th>
+<th class="tbl-hdr">Low</th>
+<th class="tbl-hdr">High</th>
+</tr>
+<tr class="odd">
+<th class="tbl-hdr" rowspan="4">8. Renewable Energy</th>
+<th class="tbl-hdr"><strong>SWAC district cooling serving multi-asset coastal
+districts</strong></th>
+<th class="tbl-hdr">Regenerative with conditions</th>
+<th class="tbl-hdr">Very high</th>
+<th class="tbl-hdr">High</th>
+<th class="tbl-hdr">Low</th>
+<th class="tbl-hdr">Very high</th>
+</tr>
+<tr class="header">
+<th class="tbl-hdr"><strong>Solar-powered desalination with surplus/shared resilience or
+restoration-linked water systems</strong></th>
+<th class="tbl-hdr">Regenerative with conditions</th>
+<th class="tbl-hdr">High</th>
+<th class="tbl-hdr">High</th>
+<th class="tbl-hdr">Low</th>
+<th class="tbl-hdr">High</th>
+</tr>
+<tr class="odd">
+<th class="tbl-hdr"><strong>Electric dive and excursion boats powered by solar resort
+microgrids</strong></th>
+<th class="tbl-hdr">Sustainable</th>
+<th class="tbl-hdr">High</th>
+<th class="tbl-hdr">High</th>
+<th class="tbl-hdr">Low</th>
+<th class="tbl-hdr">High</th>
+</tr>
+<tr class="header">
+<th class="tbl-hdr"><strong>Shared solar marina charging infrastructure for
+destination-wide vessel decarbonization</strong></th>
+<th class="tbl-hdr">Regenerative with conditions</th>
+<th class="tbl-hdr">Medium–High</th>
+<th class="tbl-hdr">Medium</th>
+<th class="tbl-hdr">Low</th>
+<th class="tbl-hdr">High</th>
+</tr>
+<tr class="odd">
+<th class="tbl-hdr" rowspan="2">9. Data Monitoring</th>
+<th class="tbl-hdr"><strong>Citizen science with quality control (reef/seagrass surveys)
++ open data</strong></th>
+<th class="tbl-hdr">Regenerative- Enabler</th>
+<th class="tbl-hdr">Low</th>
+<th class="tbl-hdr">Low</th>
+<th class="tbl-hdr">Low</th>
+<th class="tbl-hdr">Medium</th>
+</tr>
+<tr class="header">
+<th class="tbl-hdr"><strong>Bleaching early-warning + operational adjustments (activity
+restrictions, rapid response)</strong></th>
+<th class="tbl-hdr">Regenerative- Enabler</th>
+<th class="tbl-hdr">Medium-high</th>
+<th class="tbl-hdr">Medium</th>
+<th class="tbl-hdr">Very low</th>
+<th class="tbl-hdr">Medium</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<h2 id="landscape-observations">Landscape Observations</h2>
+<p>The current landscape for regenerative coastal tourism remains
+relatively nascent, with visible activity concentrated among a limited
+number of advanced operators and destinations that combine premium
+tourism models with strong natural assets. Examples often referenced in
+the market include Soneva, Misool Eco Resort, and selected initiatives
+associated with Red Sea Global.</p>
+<p>A key observation from the scoping process is that many interventions
+can be implemented at multiple scales. Coral gardening, reef-safe
+moorings, local procurement programs, or wastewater upgrades may operate
+at the level of a single hotel, a cluster of resorts, or an entire
+destination. Scale matters because broader deployment can generate
+stronger ecosystem outcomes, shared infrastructure efficiencies, and
+more coherent destination branding than isolated property-level
+implementation.</p>
+<h1 id="evidence-review-key-insights">4. Evidence Review &amp; Key
+Insights</h1>
+<h2 id="summary-of-evidence">Summary of Evidence</h2>
+<p>The evidence base for regenerative tourism is strongest where
+ecological improvement can be linked directly to visitor demand, avoided
+operating risk, or established ecosystem-service values. The most mature
+evidence clusters around coral-reef-dependent tourism, mangrove
+ecosystem services, nature-based coastal protection, and consumer
+willingness to pay for environmentally differentiated hospitality
+products.</p>
+<p>The macroeconomic context reinforces the importance of the topic.
+Travel and tourism contributed just over $9.9 trillion to the global
+economy in 2023, representing 9.1% of global GDP (World Travel &amp;
+Tourism Council, 2024). Coastal and marine tourism also represents a
+major share of the sector, with World Bank materials estimating that it
+accounts for nearly half of global tourism activity (World Bank,
+2025).</p>
+<p>At the same time, the evidence is uneven across intervention types.
+Ecological and economic evidence is relatively strong for coral reefs,
+mangroves, and visible destination-quality interventions, but weaker for
+intangible social outcomes such as stewardship, cultural continuity,
+local pride, and community identity.</p>
+<p class="tbl-label"><strong>Table 5: Evidence Summary</strong></p>
+<table class="data-table">
+<colgroup>
+<col style="width: 25%"/>
+<col style="width: 16%"/>
+<col style="width: 30%"/>
+<col style="width: 26%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th class="tbl-hdr"><strong>Evidence Area</strong></th>
+<th class="tbl-hdr"><strong>Evidence Strength</strong></th>
+<th class="tbl-hdr"><strong>Main Monetization Pathway</strong></th>
+<th class="tbl-hdr"><strong>Main Limitation</strong></th>
+</tr>
+<tr class="odd">
+<th class="tbl-hdr"><strong>Coral reef condition, restoration, and visitor
+use</strong></th>
+<th class="tbl-hdr"><strong>Strong</strong></th>
+<th class="tbl-hdr">Tourism demand, visitor willingness to pay, destination
+attractiveness</th>
+<th class="tbl-hdr">Long recovery timelines; transferability issues</th>
+</tr>
+<tr class="header">
+<th class="tbl-hdr"><strong>Blue-carbon habitats and coastal resilience</strong></th>
+<th class="tbl-hdr"><strong>Strong to Moderate</strong></th>
+<th class="tbl-hdr">Carbon, coastal protection, avoided damage, ecosystem services</th>
+<th class="tbl-hdr">Tourism linkage is often indirect</th>
+</tr>
+<tr class="odd">
+<th class="tbl-hdr"><strong>Water quality and marine habitat protection</strong></th>
+<th class="tbl-hdr"><strong>Moderate</strong></th>
+<th class="tbl-hdr">Avoided ecosystem degradation, visitor experience, destination
+quality, avoided treatment or damage costs</th>
+<th class="tbl-hdr">Direct tourism monetization is often difficult to isolate</th>
+</tr>
+<tr class="header">
+<th class="tbl-hdr"><strong>Hospitality premiums, destination differentiation, and
+visitor demand</strong></th>
+<th class="tbl-hdr"><strong>Moderate</strong></th>
+<th class="tbl-hdr">Room-rate premium, occupancy uplift, repeat visitation, brand
+differentiation</th>
+<th class="tbl-hdr">Stronger evidence for 'green' than explicitly 'regenerative'
+positioning</th>
+</tr>
+<tr class="odd">
+<th class="tbl-hdr"><strong>Community stewardship, fisheries, and local
+livelihoods</strong></th>
+<th class="tbl-hdr"><strong>Moderate</strong></th>
+<th class="tbl-hdr">Livelihood protection, fisheries productivity, visitor experience,
+local value retention</th>
+<th class="tbl-hdr">Social and governance outcomes are harder to monetize directly</th>
+</tr>
+<tr class="header">
+<th class="tbl-hdr"><strong>Circularity, visitor stewardship, and destination-wide
+programming</strong></th>
+<th class="tbl-hdr"><strong>Emerging</strong></th>
+<th class="tbl-hdr">Avoided marine damage, visible destination-quality improvement,
+combined tourism and resilience value</th>
+<th class="tbl-hdr">Limited mature valuation literature, especially at portfolio
+level</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<h2 id="what-drives-impact">What Drives Impact</h2>
+<p>Several factors distinguish higher-impact regenerative interventions
+from weaker ones. First, the strongest interventions improve shared
+destination assets, not only the environmental performance of individual
+properties. In marine tourism, visitor experience and long-term
+destination competitiveness depend on the condition of shared reefs,
+habitats, fisheries, beaches, and coastal systems.</p>
+<p>Second, community co-management and local stewardship are often
+central to durability. This is especially true for fisheries, coastal
+habitat restoration, visitor management, and marine conservation, where
+behavior, enforcement, and long-term stewardship shape ecological
+outcomes alongside capital investment.</p>
+<p>Third, the clearest monetizable pathways are those in which
+ecological quality is visibly linked to tourism demand, visitor
+experience, or avoided loss. Reef quality, marine habitat condition,
+beach quality, and other visible environmental attributes can affect
+recreational value, destination choice, and willingness to pay.</p>
+<p>Fourth, scaling matters. Hotel-level pilots can generate proof of
+concept, but many of the strongest pathways in regenerative tourism
+operate at the level of shared ecosystems and shared destination assets
+rather than within a single property.</p>
+<h2 id="evidence-strength-and-gaps">Evidence Strength and Gaps</h2>
+<p>Strong evidence exists for coral-reef-related tourism value. Spalding
+et al. (2017) estimated the global annual value of coral reef tourism
+and demonstrated that reef-related tourism value is spatially
+concentrated, making destination-specific analysis especially important.
+There is also strong evidence for mangrove ecosystem-service valuation,
+particularly for coastal protection, carbon, habitat support, and other
+regulating services.</p>
+<p>Evidence is moderate to strong for environmentally differentiated
+hospitality value. A systematic review by Damigos and Kontogianni (2023)
+found that consumers who are willing to choose greener hotels may accept
+a price premium, while also noting substantial variation by geography,
+traveler segment, and hotel type.</p>
+<p>The evidence becomes weaker in three areas: monetization of
+intangible social value; geographic transferability to the Red Sea
+context; and the combined SROI of multiple regenerative interventions
+implemented simultaneously.</p>
+<h2 id="key-insights-1">Key Insights</h2>
+<p><strong>What works.</strong> The clearest monetizable pathways
+connect ecological condition directly to tourism demand, visitor
+experience, or avoided loss. Coral reef quality is the strongest
+example. Mangroves and nature-based coastal interventions are also
+promising because they can generate multiple categories of value at
+once.</p>
+<p><strong>Limitations and trade-offs.</strong> Time horizon is a major
+issue. Coral and mangrove recovery often unfold over years or decades.
+SROI design should handle discounting carefully and complement monetized
+estimates with narrative treatment of longer-term ecological and social
+value.</p>
+<p><strong>Scaling and implementation.</strong> Pilot interventions at
+the asset level can generate useful early evidence, but the largest
+value creation is likely to occur when interventions shift the
+ecological and reputational trajectory of the destination as a
+whole.</p>
+<h1 id="value-creation-across-the-topic">5. Value Creation Across the
+Topic</h1>
+<h2 id="core-investment-value-pathways">Core Investment Value
+Pathways</h2>
+<p>The scoping analysis identified three overarching investment pillars
+that structure value creation in regenerative coastal tourism. These
+pillars are reinforcing: asset durability supports revenue, risk
+mitigation protects that revenue, and capital efficiency improves the
+returns available to investors who fund the transition.</p>
+<h3 id="pillar-1-asset-durability-revenue-preservation">Pillar 1: Asset
+Durability &amp; Revenue Preservation</h3>
+<p>Conventional coastal tourism erodes its own foundations: reef
+degradation reduces willingness-to-pay, brand damage creates volatile
+demand, and rising remediation costs impair asset value over time.
+Regenerative tourism reverses this trajectory.</p>
+<ul>
+<li>
+<p>Avoided reef degradation costs (restoration costs avoided through
+prevention)</p>
+</li>
+<li>
+<p>Sustained fisheries productivity supporting local supply chains and
+authentic experiences</p>
+</li>
+<li>
+<p>Coastal protection value from mangroves and reef structures (wave
+attenuation, storm damage avoided)</p>
+</li>
+<li>
+<p>Higher willingness-to-pay from certified regenerative experiences</p>
+</li>
+<li>
+<p>Longer average stays and repeat visitation from engaged, value-driven
+guests</p>
+</li>
+<li>
+<p>Reduced seasonality volatility through diversified nature-based
+offerings</p>
+</li>
+</ul>
+<h3 id="pillar-2-risk-mitigation-downside-protection">Pillar 2: Risk
+Mitigation &amp; Downside Protection</h3>
+<p>Conventional tourism operators face mounting risks from regulatory
+tightening, loss of social license, and climate vulnerability.
+Regenerative operators are structurally better positioned.</p>
+<ul>
+<li>
+<p>Policy alignment reduces regulatory shock exposure</p>
+</li>
+<li>
+<p>Community buy-in reduces operational disruption risk</p>
+</li>
+<li>
+<p>Greater climate resilience through natural infrastructure
+investments</p>
+</li>
+<li>
+<p>Flood incidence and severity reduced (avoided infrastructure
+costs)</p>
+</li>
+<li>
+<p>Reduced operational risks from environmental degradation</p>
+</li>
+</ul>
+<h3 id="pillar-3-capital-efficiency-financing-advantage">Pillar 3:
+Capital Efficiency &amp; Financing Advantage</h3>
+<p>Regenerative operators can access capital structures unavailable to
+conventional operators, improving overall returns and reducing cost of
+capital.</p>
+<ul>
+<li>
+<p>Unlocks patient capital from impact investors and blended finance
+instruments</p>
+</li>
+<li>
+<p>Attracts strategic NGO, government, and research partnerships that
+offset costs</p>
+</li>
+<li>
+<p>Demonstrates value created per dollar invested (SROI &gt; IRR as
+communication tool)</p>
+</li>
+<li>
+<p>Shows leverage of non-commercial capital alongside private
+investment</p>
+</li>
+</ul>
+<h2 id="tourism-as-a-value-aggregator">Tourism as a Value
+Aggregator</h2>
+<p>A defining feature of regenerative coastal tourism is its capacity to
+bundle multiple ecosystem improvements into monetizable experiences.
+Coral restoration, mangrove rehabilitation, ghost gear removal, and
+sustainable seafood sourcing each create discrete ecological
+improvements, but their combined effect generates a differentiated
+destination identity that commands premium pricing and attracts a
+distinct, growing market segment of values-based travelers.</p>
+<p>This bundling effect means that the aggregate SROI of a regenerative
+tourism portfolio exceeds the sum of individual intervention SROIs. The
+destination becomes a product in itself, and the ecological health that
+underpins it is the asset being invested in.</p>
+<h1 id="prioritization-sroi-scope-definition">6. Prioritization &amp;
+SROI Scope Definition</h1>
+<h2 id="portfolio-of-proposed-interventions">Portfolio of Proposed
+Interventions</h2>
+<p>The following table presents the eight proposed interventions
+selected for the SROI portfolio. These were identified from the full
+list of interventions based on their scoring for four criteria: evidence
+maturity, impact on ocean health, impact on stakeholders, and potential
+business case ROI.</p>
+<p class="tbl-label"><strong>Table 7: Portfolio of Proposed Interventions</strong></p>
+<table class="data-table">
+<colgroup>
+<col style="width: 33%"/>
+<col style="width: 66%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th class="tbl-hdr"><strong>Category</strong></th>
+<th class="tbl-hdr"><strong>Intervention</strong></th>
+</tr>
+<tr class="odd">
+<th class="tbl-hdr" rowspan="2"><strong>1. Regenerative Ecosystem</strong></th>
+<th class="tbl-hdr">Coral gardening + outplanting (with accredited practitioners)</th>
+</tr>
+<tr class="header">
+<th class="tbl-hdr">Native coastal habitat landscaping: Mangrove restoration / assisted
+natural regeneration (hydrology-first + stewardship)</th>
+</tr>
+<tr class="odd">
+<th class="tbl-hdr"><strong>2. Water Stewardship</strong></th>
+<th class="tbl-hdr">Advanced wastewater treatment + nutrient polishing beyond compliance
+(with transparent monitoring)</th>
+</tr>
+<tr class="header">
+<th class="tbl-hdr"><strong>3. Sustainable &amp; Resilient Infrastructure</strong></th>
+<th class="tbl-hdr">Green infrastructure for stormwater (Wadi restoration, bioswales,
+permeable surfaces, constructed wetlands)</th>
+</tr>
+<tr class="odd">
+<th class="tbl-hdr"><strong>5. Sustainable Food System &amp; Supply Chain</strong></th>
+<th class="tbl-hdr">'Reef-positive' seafood procurement + fisher co-management
+support</th>
+</tr>
+<tr class="header">
+<th class="tbl-hdr" rowspan="2"><strong>6. Community Co-Creation &amp;
+Engagement</strong></th>
+<th class="tbl-hdr">Local workforce development programs tied to regenerative programs
+for hotel employees</th>
+</tr>
+<tr class="odd">
+<th class="tbl-hdr">Coastal community micro-enterprise incubator: Traditional
+boatbuilding + low-impact marine excursions</th>
+</tr>
+<tr class="header">
+<th class="tbl-hdr"><strong>7. Circular Waste &amp; Resource Management</strong></th>
+<th class="tbl-hdr">Ghost gear recovery + pay-for-return with local fishers +
+recycling/upcycling</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<h2 id="summary-of-selected-intervention-types">Summary of Selected
+Intervention Types</h2>
+<h3 id="intervention-1-coral-gardening-and-outplanting">Intervention 1:
+Coral Gardening and Outplanting</h3>
+<p><strong>Description:</strong> Cultivating coral fragments in
+nurseries and strategically outplanting them to degraded reef areas. Can
+be implemented at the hotel level through partnerships with marine
+biologists or through shared industry programs.</p>
+<p><strong>Rationale:</strong> Strong international evidence base;
+directly aligns with WAVE's reef ecosystem focus; creates a clear link
+between ecological restoration and hospitality operator value through
+reef quality and marine tourism demand.</p>
+<h3 id="intervention-2-mangrove-restoration-with-coastal-habitat-regeneration">Intervention
+2: Mangrove Restoration with Coastal Habitat Regeneration</h3>
+<p><strong>Description:</strong> Hydrology-first restoration of mangrove
+systems combined with community stewardship programs. Designed to
+restore ecological function while supporting habitat connectivity,
+nutrient filtration, coastal resilience, and local engagement.</p>
+<p><strong>Rationale:</strong> Mature evidence base across multiple
+coastal markets; generates several value streams at once including
+coastal protection, carbon storage, habitat quality, and destination
+resilience.</p>
+<h3 id="intervention-3-advanced-wastewater-treatment-beyond-compliance">Intervention
+3: Advanced Wastewater Treatment Beyond Compliance</h3>
+<p><strong>Description:</strong> Wastewater treatment systems that
+exceed minimum regulatory standards, including nutrient polishing,
+tertiary treatment, water reuse, and discharge practices designed to
+protect sensitive coastal ecosystems.</p>
+<p><strong>Rationale:</strong> Strategically important in arid coastal
+destinations where water quality is material to ecosystem health. Clear
+links to reef resilience, water clarity, avoided ecosystem degradation,
+and destination reputation.</p>
+<h3 id="intervention-4-green-stormwater-infrastructure">Intervention 4:
+Green Stormwater Infrastructure</h3>
+<p><strong>Description:</strong> Nature-based and hybrid infrastructure
+solutions including bioswales, permeable surfaces, constructed wetlands,
+restored wadis, retention landscapes, and vegetated drainage
+systems.</p>
+<p><strong>Rationale:</strong> Creates dual value through climate
+adaptation and marine protection. Particularly relevant where episodic
+rainfall events generate flash runoff and sediment discharge that can
+affect coastal water quality and reef health.</p>
+<h3 id="intervention-5-reef-positive-seafood-procurement-with-fisher-co-management">Intervention
+5: Reef-Positive Seafood Procurement with Fisher Co-Management</h3>
+<p><strong>Description:</strong> Hotel purchasing programs that
+prioritize locally caught and sustainably managed seafood, combined with
+support for fisher participation in reef monitoring and co-management
+schemes.</p>
+<p><strong>Rationale:</strong> Links hospitality value chains directly
+to community livelihoods and marine ecosystem health. Addresses the
+cultural heritage dimension prioritized by WAVE by supporting local
+fisheries and place-based food systems.</p>
+<h3 id="intervention-6-local-workforce-development-for-regenerative-practices">Intervention
+6: Local Workforce Development for Regenerative Practices</h3>
+<p><strong>Description:</strong> Training and certification programs for
+local residents and hospitality workers in regenerative tourism
+practices including reef restoration, sustainable guiding, environmental
+monitoring, and waste recovery.</p>
+<p><strong>Rationale:</strong> Connects ecological investment with
+employment creation, social inclusion, and long-term operational
+capacity. Particularly relevant to national workforce development and
+localization agendas in Saudi Arabia.</p>
+<h3 id="intervention-7-coastal-community-micro-enterprise-incubator">Intervention
+7: Coastal Community Micro-Enterprise Incubator</h3>
+<p><strong>Description:</strong> Targeted incubation and market-linkage
+support for locally owned coastal enterprises focused on traditional
+boatbuilding, heritage maritime skills, and low-impact marine
+excursions.</p>
+<p><strong>Rationale:</strong> Directly reflects WAVE's interest in
+linking regenerative tourism with community participation and cultural
+heritage. Creates a practical mechanism for distributing tourism
+revenues beyond resort boundaries.</p>
+<h3 id="intervention-8-ghost-gear-recovery-with-community-recycling-and-upcycling">Intervention
+8: Ghost Gear Recovery with Community Recycling and Upcycling</h3>
+<p><strong>Description:</strong> Organized recovery of abandoned, lost,
+or discarded fishing gear from reef and coastal habitats, combined with
+pay-for-return incentives, community collection efforts, and downstream
+recycling or upcycling.</p>
+<p><strong>Rationale:</strong> An emerging but compelling circular
+economy model with strong alignment to ocean health, community income
+generation, and WAVE's blue economy priorities.</p>
+<h2 id="defined-scope-boundaries">Defined Scope Boundaries</h2>
+<p class="tbl-label"><strong>Table 8: Defined Scope Boundaries</strong></p>
+<table class="data-table">
+<colgroup>
+<col style="width: 25%"/>
+<col style="width: 74%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th class="tbl-hdr"><strong>Scope Dimension</strong></th>
+<th class="tbl-hdr"><strong>Definition</strong></th>
+</tr>
+<tr class="odd">
+<th class="tbl-hdr"><strong>System Boundaries</strong></th>
+<th class="tbl-hdr">Ocean- and coastal-connected impact pathways within hospitality
+operators' influence. Excludes sector-level and public policy
+effects.</th>
+</tr>
+<tr class="header">
+<th class="tbl-hdr"><strong>Geographic Scope</strong></th>
+<th class="tbl-hdr">Red Sea coastline of Saudi Arabia, using international evidence with
+explicit transferability assumptions.</th>
+</tr>
+<tr class="odd">
+<th class="tbl-hdr"><strong>Stakeholders Included</strong></th>
+<th class="tbl-hdr">Hospitality operators, tourists, local communities, fishers and
+local producers, ecosystems (proxy valuation), and public/society
+(avoided costs).</th>
+</tr>
+<tr class="header">
+<th class="tbl-hdr"><strong>Time Horizon</strong></th>
+<th class="tbl-hdr">Short-term (1–3 years): operational outputs and initial ecological
+response. Long-term (10–20+ years): full ecological recovery and
+sustained economic benefit.</th>
+</tr>
+<tr class="odd">
+<th class="tbl-hdr"><strong>Types of Value Included</strong></th>
+<th class="tbl-hdr">Financial (revenue, cost savings), environmental (ecosystem service
+valuation), and social (employment, cultural outcomes — narrative for
+non-monetizable).</th>
+</tr>
+<tr class="header">
+<th class="tbl-hdr"><strong>Explicit Exclusions</strong></th>
+<th class="tbl-hdr">Standalone enabling activities such as guest engagement campaigns
+and data monitoring systems, unless directly embedded within a selected
+intervention package. Also excluded: giga-project-scale initiatives and
+interventions lacking traceable causal pathways to monetizable
+outcomes.</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<h1 id="stakeholder-value-mapping">7. Stakeholder Value Mapping</h1>
+<h2 id="key-stakeholders">Key Stakeholders</h2>
+<p>The following stakeholder groups are included in the value mapping
+for the regenerative tourism portfolio. Each group experiences distinct
+forms of value — some monetizable, others captured narratively.</p>
+<p class="tbl-label"><strong>Table 9: Stakeholder Value Mapping</strong></p>
+<table class="data-table">
+<colgroup>
+<col style="width: 21%"/>
+<col style="width: 50%"/>
+<col style="width: 28%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th class="tbl-hdr"><strong>Stakeholder</strong></th>
+<th class="tbl-hdr"><strong>Primary Value Received</strong></th>
+<th class="tbl-hdr"><strong>Monetizability</strong></th>
+</tr>
+<tr class="odd">
+<th class="tbl-hdr"><strong>Ecosystems (proxy)</strong></th>
+<th class="tbl-hdr">Restored coral reefs and mangroves; improved biodiversity; stronger
+ecological resilience; reduced pollution, sedimentation, and gear
+entanglement; enhanced ecosystem service capacity.</th>
+<th class="tbl-hdr"><strong>Partial — ecosystem service valuation, avoided loss,
+restoration cost proxies, habitat value proxies.</strong></th>
+</tr>
+<tr class="header">
+<th class="tbl-hdr"><strong>Tourists / Guests</strong></th>
+<th class="tbl-hdr">Higher-quality nature experiences; clearer waters and healthier
+reefs; authentic community-based experiences; wellness and
+purpose-driven travel aligned with personal values.</th>
+<th class="tbl-hdr"><strong>Yes — willingness-to-pay premium, higher ADR, occupancy
+uplift, visitation spend.</strong></th>
+</tr>
+<tr class="odd">
+<th class="tbl-hdr"><strong>Local Communities</strong></th>
+<th class="tbl-hdr">Employment creation; diversified livelihoods; stronger local
+enterprise participation; skills development; cultural identity and
+stewardship recognition.</th>
+<th class="tbl-hdr"><strong>Partial — income/jobs monetizable; identity, cohesion, and
+pride mainly narrative.</strong></th>
+</tr>
+<tr class="header">
+<th class="tbl-hdr"><strong>Fishers / Local Producers</strong></th>
+<th class="tbl-hdr">Stable demand through local procurement; premium pricing for
+sustainable products; reduced income volatility; access to hospitality
+markets.</th>
+<th class="tbl-hdr"><strong>Yes — income uplift, revenue growth, avoided losses, margin
+premiums.</strong></th>
+</tr>
+<tr class="odd">
+<th class="tbl-hdr"><strong>Hospitality Operators / Developers</strong></th>
+<th class="tbl-hdr">Revenue uplift from premium positioning; reduced operating costs;
+stronger brand equity; longer asset life; lower environmental/regulatory
+risk; access to ESG/impact capital.</th>
+<th class="tbl-hdr"><strong>Yes — revenue, cost savings, asset value, IRR, risk-adjusted
+returns.</strong></th>
+</tr>
+<tr class="header">
+<th class="tbl-hdr"><strong>Public / Society</strong></th>
+<th class="tbl-hdr">Increased tax revenues; reduced coastal damage and cleanup costs;
+lower pressure on public infrastructure; progress toward diversification
+and sustainability goals.</th>
+<th class="tbl-hdr"><strong>Partial — avoided cost estimates, GHG emissions
+reduced.</strong></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<h2 id="value-distribution">Value Distribution</h2>
+<p>Value flows through a reinforcing cycle across stakeholder groups.
+Hospitality operators that invest in reef restoration, mangrove
+regeneration, water quality, local procurement, and community
+partnerships can improve destination quality while differentiating their
+offering. These improvements may attract higher-value guests, strengthen
+willingness to pay, support repeat visitation, and create revenue that
+can be reinvested into further regenerative activity.</p>
+<p>Ecological improvements also create value beyond the operator.
+Healthier reefs, mangroves, and coastal systems can support fisheries,
+reduce pollution and erosion risk, strengthen shoreline resilience, and
+improve the quality of guest experiences. Local communities, fishers,
+and producers may benefit through employment, enterprise development,
+sustainable procurement, and greater participation in tourism value
+chains.</p>
+<p>Public value is created through avoided costs, stronger natural
+capital, expanded local economic activity, and potential contributions
+to national diversification and sustainability goals. The SROI analysis
+will place particular emphasis on operator-to-ecosystem-to-operator
+pathways because these often provide the clearest and most commercially
+attributable monetization opportunities.</p>
+<h1 id="logic-model-for-the-topic">8. Logic Model for the Topic</h1>
+<p>Building on the stakeholder value mapping, the logic model translates
+the selected interventions into causal pathways for value creation.
+While the previous section identifies who receives value, this section
+focuses on how value is expected to be created through specific
+activities, outputs, and short-, medium-, and long-term outcomes.</p>
+<h2 id="summary-logic-model">Summary Logic Model</h2>
+<p>A full portfolio-level logic model covering the prioritized
+regenerative coastal tourism interventions was developed as part of this
+study and is included in the Appendix. The full version maps outputs and
+outcomes by stakeholder group. The table below presents a condensed
+summary version organized around the eight proposed interventions.</p>
+<p class="tbl-label"><strong>Table 10: Summary Logic Model</strong></p>
+<table class="data-table">
+<colgroup>
+<col style="width: 23%"/>
+<col style="width: 16%"/>
+<col style="width: 17%"/>
+<col style="width: 21%"/>
+<col style="width: 21%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th class="tbl-hdr"><strong>Activities (Intervention)</strong></th>
+<th class="tbl-hdr"><strong>Outputs</strong></th>
+<th class="tbl-hdr"><strong>Short-Term Outcomes</strong></th>
+<th class="tbl-hdr"><strong>Intermediate Outcomes</strong></th>
+<th class="tbl-hdr"><strong>Long-Term Outcomes</strong></th>
+</tr>
+<tr class="odd">
+<th class="tbl-hdr"><strong>(1) Coral gardening + outplanting</strong></th>
+<th class="tbl-hdr">Area of coral reef protected or restored</th>
+<th class="tbl-hdr">Early-stage coral survival and attachment rates increased; localized
+water clarity improved</th>
+<th class="tbl-hdr">Coral establishment, natural recruitment, and reef regeneration
+rates increase; reef structural complexity improves</th>
+<th class="tbl-hdr">Biodiversity increases across reef and coastal habitats; reef
+ecosystems transition toward self-sustaining states</th>
+</tr>
+<tr class="header">
+<th class="tbl-hdr"><strong>(2) Mangrove restoration / assisted natural
+regeneration</strong></th>
+<th class="tbl-hdr">Area of mangroves protected or restored / length of coastline
+protected</th>
+<th class="tbl-hdr">Mangrove seedling survival and establishment rates increased;
+localized water clarity improved</th>
+<th class="tbl-hdr">Mangrove canopy cover and density increase; connectivity between
+habitats improves</th>
+<th class="tbl-hdr">Ecosystem service capacity and reliability increase; resilience to
+climate and environmental stressors increases</th>
+</tr>
+<tr class="odd">
+<th class="tbl-hdr"><strong>(3) Advanced wastewater treatment beyond
+compliance</strong></th>
+<th class="tbl-hdr">Volume of wastewater treated beyond compliance / contaminated water
+diverted</th>
+<th class="tbl-hdr">Nutrient concentrations reduced (N, P) in coastal waters</th>
+<th class="tbl-hdr">Water quality remains consistently within ecological thresholds;
+wildlife presence/habitat use improves</th>
+<th class="tbl-hdr">Marine and coastal ecosystems improved; tourism and fisheries
+ecosystem services strengthened</th>
+</tr>
+<tr class="header">
+<th class="tbl-hdr"><strong>(4) Green infrastructure for stormwater</strong></th>
+<th class="tbl-hdr">Area of green infrastructure installed / length of coastline
+protected</th>
+<th class="tbl-hdr">Sediment loads reduced in nearshore environments; localized water
+clarity improved</th>
+<th class="tbl-hdr">Connectivity between habitats improves; water quality remains within
+ecological thresholds</th>
+<th class="tbl-hdr">Resilience to climate and environmental stressors increases;
+ecosystem service capacity and reliability increase</th>
+</tr>
+<tr class="odd">
+<th class="tbl-hdr"><strong>(5) Reef-positive seafood procurement + fisher
+co-management</strong></th>
+<th class="tbl-hdr">% seafood sourced sustainably and # of fishers participating</th>
+<th class="tbl-hdr">Reduction in fishing pressure on targeted reef species</th>
+<th class="tbl-hdr">Fish biomass and abundance increase; community participation in
+resource management becomes institutionalized</th>
+<th class="tbl-hdr">Sustainable fisheries ecosystem services increase; more resilient
+and diversified coastal livelihoods</th>
+</tr>
+<tr class="header">
+<th class="tbl-hdr"><strong>(6) Local workforce development programs</strong></th>
+<th class="tbl-hdr">Number of local individuals trained and certified in regenerative
+practices</th>
+<th class="tbl-hdr">Skills, certifications, and employability of local residents
+increase; short-term employment generated</th>
+<th class="tbl-hdr">Stable employment in regenerative sectors established; local skills
+base strengthened</th>
+<th class="tbl-hdr">Long-term retention and advancement of local talent; long-term
+household prosperity and upward economic mobility increase</th>
+</tr>
+<tr class="odd">
+<th class="tbl-hdr"><strong>(7) Coastal community micro-enterprise
+incubator</strong></th>
+<th class="tbl-hdr">Number of community enterprises supported / # of jobs created</th>
+<th class="tbl-hdr">Traditional skills, cultural heritage, and community-based
+livelihoods revitalized</th>
+<th class="tbl-hdr">Community-owned enterprises and SMEs linked to tourism value chains
+grow and stabilize</th>
+<th class="tbl-hdr">Diversified livelihoods; strengthened cultural identity linked to
+marine ecosystems</th>
+</tr>
+<tr class="header">
+<th class="tbl-hdr"><strong>(8) Ghost gear recovery + pay-for-return +
+recycling/upcycling</strong></th>
+<th class="tbl-hdr">Tons of ghost gear recovered / volume of macro-plastic diverted from
+nature</th>
+<th class="tbl-hdr">Reduced fishing gear in ocean habitats; reduced localized physical
+disturbance to reefs and coastal habitats</th>
+<th class="tbl-hdr">Marine debris / entanglement pressure declines; wildlife
+presence/habitat use improves</th>
+<th class="tbl-hdr">Marine and coastal ecosystems improved; long-term income security
+and resilience from marine resources increase</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<h2 id="key-causal-pathways">Key Causal Pathways</h2>
+<p>The logic model includes three primary causal architecture types,
+each with distinct monetization mechanisms:</p>
+<ul>
+<li>
+<p>Ecological restoration → tourism demand pathway: Improved reef or
+mangrove condition increases habitat quality and visitor experience,
+which increases willingness-to-pay and visitation volumes, translating
+into operator revenue.</p>
+</li>
+<li>
+<p>Ecological protection → avoided cost pathway: Restored natural
+infrastructure reduces damage from floods, sedimentation, and storm
+events, generating value through avoided remediation and maintenance
+costs.</p>
+</li>
+<li>
+<p>Community empowerment → supply chain value pathway: Local workforce
+and community participation in regenerative practices reduces operator
+HR costs, strengthens authentic destination identity, and creates
+sustainable local supply chains.</p>
+</li>
+</ul>
+<h1 id="sroi-design-foundations">9. SROI Design Foundations</h1>
+<h2 id="intervention-1-coral-gardening-and-outplanting-1">Intervention
+1: Coral Gardening and Outplanting</h2>
+<h3 id="measurement-focus">Measurement Focus</h3>
+<p>The SROI should assess whether coral gardening improves reef
+condition, increases destination quality and visitor experience, and
+translates into commercial value for hospitality operators through
+enhanced willingness to pay, occupancy, or positioning. The monetized
+case may include avoided reef degradation costs, revenue uplift from
+improved guest experience, and the value of restored ecosystem
+services.</p>
+<h3 id="key-metrics-indicators">Key Metrics &amp; Indicators</h3>
+<table class="data-table">
+<colgroup>
+<col style="width: 50%"/>
+<col style="width: 50%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th class="tbl-hdr"><strong>Metric / Indicator</strong></th>
+<th class="tbl-hdr"><strong>Relevance to SROI</strong></th>
+</tr>
+<tr class="odd">
+<th class="tbl-hdr"><strong>Coral cover (% change)</strong></th>
+<th class="tbl-hdr">Primary indicator of ecological recovery; links to destination
+quality.</th>
+</tr>
+<tr class="header">
+<th class="tbl-hdr"><strong>Reef structural complexity</strong></th>
+<th class="tbl-hdr">Indicator of habitat recovery; affects fish populations and dive
+experience quality.</th>
+</tr>
+<tr class="odd">
+<th class="tbl-hdr"><strong>Diver willingness to pay</strong></th>
+<th class="tbl-hdr">Revenue pathway; measures consumer value of reef condition.</th>
+</tr>
+<tr class="header">
+<th class="tbl-hdr"><strong>Average daily room rate (ADR)</strong></th>
+<th class="tbl-hdr">Revenue pathway; tracks premium positioning associated with reef
+quality.</th>
+</tr>
+<tr class="odd">
+<th class="tbl-hdr"><strong>Avoided restoration costs ($/ha)</strong></th>
+<th class="tbl-hdr">Avoided cost pathway; measures long-term cost savings from
+preventive restoration.</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<h3 id="critical-assumptions-and-uncertainties">Critical Assumptions and
+Uncertainties</h3>
+<ul>
+<li>
+<p>Rate of coral establishment is dependent on water temperature,
+bleaching risk, and physical disturbance — all elevated in the Red Sea
+context.</p>
+</li>
+<li>
+<p>WTP transfer from other reef markets requires adjustment for Red Sea
+visitor demographics and destination maturity.</p>
+</li>
+<li>
+<p>Long recovery time horizons (10–20 years) require careful discounting
+assumptions.</p>
+</li>
+</ul>
+<h2 id="intervention-2-mangrove-restoration">Intervention 2: Mangrove
+Restoration</h2>
+<h3 id="measurement-focus-1">Measurement Focus</h3>
+<p>The SROI should assess whether mangrove restoration improves coastal
+resilience, carbon storage, habitat quality, and biodiversity, and
+whether these improvements can be monetized through avoided damage
+costs, carbon revenues, and tourism quality improvements.</p>
+<h3 id="key-metrics-indicators-1">Key Metrics &amp; Indicators</h3>
+<table class="data-table">
+<colgroup>
+<col style="width: 50%"/>
+<col style="width: 50%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th class="tbl-hdr"><strong>Metric / Indicator</strong></th>
+<th class="tbl-hdr"><strong>Relevance to SROI</strong></th>
+</tr>
+<tr class="odd">
+<th class="tbl-hdr"><strong>Hectares of mangrove restored</strong></th>
+<th class="tbl-hdr">Measures the scale of ecological restoration.</th>
+</tr>
+<tr class="header">
+<th class="tbl-hdr"><strong>Carbon credits generated (tCO₂e/ha/yr)</strong></th>
+<th class="tbl-hdr">Supports blue carbon market monetization pathway.</th>
+</tr>
+<tr class="odd">
+<th class="tbl-hdr"><strong>Flood and storm damage avoided</strong></th>
+<th class="tbl-hdr">Coastal protection pathway; avoided cost estimate.</th>
+</tr>
+<tr class="header">
+<th class="tbl-hdr"><strong>Ecotourism visits and revenue</strong></th>
+<th class="tbl-hdr">Tourism demand pathway; nature-based experience value.</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<h3 id="critical-assumptions-and-uncertainties-1">Critical Assumptions
+and Uncertainties</h3>
+<ul>
+<li>
+<p>Hydrology restoration is a prerequisite for mangrove establishment;
+site assessment is critical.</p>
+</li>
+<li>
+<p>Carbon market access requires verified methodologies (e.g., Verra)
+and additional due diligence.</p>
+</li>
+<li>
+<p>Coastal protection value depends on storm frequency and wave energy
+in specific locations.</p>
+</li>
+</ul>
+<h2 id="intervention-3-advanced-wastewater-treatment">Intervention 3:
+Advanced Wastewater Treatment</h2>
+<h3 id="measurement-focus-2">Measurement Focus</h3>
+<p>The SROI should assess whether advanced wastewater treatment reduces
+nutrient loading and contamination in coastal waters, protects reef and
+seagrass ecosystems, and generates measurable value through water
+quality improvement, avoided ecosystem degradation, and reduced
+operating costs.</p>
+<h3 id="key-metrics-indicators-2">Key Metrics &amp; Indicators</h3>
+<table class="data-table">
+<colgroup>
+<col style="width: 50%"/>
+<col style="width: 50%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th class="tbl-hdr"><strong>Metric / Indicator</strong></th>
+<th class="tbl-hdr"><strong>Relevance to SROI</strong></th>
+</tr>
+<tr class="odd">
+<th class="tbl-hdr"><strong>Nutrient concentrations in coastal waters (N,
+P)</strong></th>
+<th class="tbl-hdr">Direct ecological indicator; links to reef bleaching and algal
+blooms.</th>
+</tr>
+<tr class="header">
+<th class="tbl-hdr"><strong>Volume of wastewater treated beyond compliance</strong></th>
+<th class="tbl-hdr">Output measure; tracks intervention scale.</th>
+</tr>
+<tr class="odd">
+<th class="tbl-hdr"><strong>Operating cost savings (water reuse)</strong></th>
+<th class="tbl-hdr">Avoided cost pathway; direct business value.</th>
+</tr>
+<tr class="header">
+<th class="tbl-hdr"><strong>Water quality index scores</strong></th>
+<th class="tbl-hdr">Ecosystem health indicator; tracks marine habitat condition.</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<h2 id="intervention-4-green-stormwater-infrastructure-1">Intervention
+4: Green Stormwater Infrastructure</h2>
+<h3 id="measurement-focus-3">Measurement Focus</h3>
+<p>The SROI should assess whether green stormwater infrastructure
+reduces sediment and nutrient runoff to coastal waters, protects reef
+and habitat condition, reduces flood risk and infrastructure damage, and
+delivers measurable avoided-cost value.</p>
+<h3 id="key-metrics-indicators-3">Key Metrics &amp; Indicators</h3>
+<table class="data-table">
+<colgroup>
+<col style="width: 50%"/>
+<col style="width: 50%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th class="tbl-hdr"><strong>Metric / Indicator</strong></th>
+<th class="tbl-hdr"><strong>Relevance to SROI</strong></th>
+</tr>
+<tr class="odd">
+<th class="tbl-hdr"><strong>Area of green infrastructure installed (ha)</strong></th>
+<th class="tbl-hdr">Output measure; indicates scale of intervention.</th>
+</tr>
+<tr class="header">
+<th class="tbl-hdr"><strong>Sediment loads in nearshore environments</strong></th>
+<th class="tbl-hdr">Ecological indicator; links to reef protection and water
+clarity.</th>
+</tr>
+<tr class="odd">
+<th class="tbl-hdr"><strong>Flood damage events and associated costs</strong></th>
+<th class="tbl-hdr">Avoided cost pathway; climate resilience value.</th>
+</tr>
+<tr class="header">
+<th class="tbl-hdr"><strong>Infrastructure maintenance costs</strong></th>
+<th class="tbl-hdr">Avoided cost pathway; direct business value.</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<h2 id="intervention-5-reef-positive-seafood-procurement">Intervention
+5: Reef-Positive Seafood Procurement</h2>
+<h3 id="measurement-focus-4">Measurement Focus</h3>
+<p>The SROI should assess whether reef-positive procurement reduces
+fishing pressure on reef species, improves fisheries sustainability,
+supports fisher incomes, and creates value through local supply chain
+development and authentic guest experience.</p>
+<h3 id="key-metrics-indicators-4">Key Metrics &amp; Indicators</h3>
+<table class="data-table">
+<colgroup>
+<col style="width: 50%"/>
+<col style="width: 50%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th class="tbl-hdr"><strong>Metric / Indicator</strong></th>
+<th class="tbl-hdr"><strong>Relevance to SROI</strong></th>
+</tr>
+<tr class="odd">
+<th class="tbl-hdr"><strong>% seafood sourced sustainably</strong></th>
+<th class="tbl-hdr">Output measure; tracks procurement transformation.</th>
+</tr>
+<tr class="header">
+<th class="tbl-hdr"><strong>Fisher income and catch per unit effort (CPUE)</strong></th>
+<th class="tbl-hdr">Livelihood and ecological health pathway.</th>
+</tr>
+<tr class="odd">
+<th class="tbl-hdr"><strong>Fish biomass and species abundance</strong></th>
+<th class="tbl-hdr">Ecological indicator of fisheries recovery.</th>
+</tr>
+<tr class="header">
+<th class="tbl-hdr"><strong>Guest satisfaction related to food sourcing</strong></th>
+<th class="tbl-hdr">Revenue pathway; brand and WTP implications.</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<h2 id="intervention-6-local-workforce-development">Intervention 6:
+Local Workforce Development</h2>
+<h3 id="measurement-focus-5">Measurement Focus</h3>
+<p>The SROI should assess whether workforce development programs create
+stable, quality employment in regenerative sectors, build local skills
+and certifications, reduce operator training costs, and strengthen
+community economic resilience.</p>
+<h3 id="key-metrics-indicators-5">Key Metrics &amp; Indicators</h3>
+<table class="data-table">
+<colgroup>
+<col style="width: 50%"/>
+<col style="width: 50%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th class="tbl-hdr"><strong>Metric / Indicator</strong></th>
+<th class="tbl-hdr"><strong>Relevance to SROI</strong></th>
+</tr>
+<tr class="odd">
+<th class="tbl-hdr"><strong>Number trained and certified</strong></th>
+<th class="tbl-hdr">Output measure; tracks program scale.</th>
+</tr>
+<tr class="header">
+<th class="tbl-hdr"><strong>Employment rate and income levels
+post-training</strong></th>
+<th class="tbl-hdr">Livelihood pathway; household income uplift.</th>
+</tr>
+<tr class="odd">
+<th class="tbl-hdr"><strong>Operator recruitment and training cost savings</strong></th>
+<th class="tbl-hdr">Avoided cost pathway; direct business value.</th>
+</tr>
+<tr class="header">
+<th class="tbl-hdr"><strong>Employee retention rates</strong></th>
+<th class="tbl-hdr">Operational efficiency pathway.</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<h2 id="intervention-7-coastal-community-micro-enterprise-incubator-1">Intervention
+7: Coastal Community Micro-Enterprise Incubator</h2>
+<h3 id="measurement-focus-6">Measurement Focus</h3>
+<p>The SROI should assess whether micro-enterprise incubation supports
+viable and growing community businesses, generates income from tourism,
+preserves cultural heritage practices, and creates value through
+authentic destination differentiation.</p>
+<h3 id="key-metrics-indicators-6">Key Metrics &amp; Indicators</h3>
+<table class="data-table">
+<colgroup>
+<col style="width: 50%"/>
+<col style="width: 50%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th class="tbl-hdr"><strong>Metric / Indicator</strong></th>
+<th class="tbl-hdr"><strong>Relevance to SROI</strong></th>
+</tr>
+<tr class="odd">
+<th class="tbl-hdr"><strong>Number of enterprises supported</strong></th>
+<th class="tbl-hdr">Output measure.</th>
+</tr>
+<tr class="header">
+<th class="tbl-hdr"><strong>Revenue generated by enterprises</strong></th>
+<th class="tbl-hdr">Livelihood pathway.</th>
+</tr>
+<tr class="odd">
+<th class="tbl-hdr"><strong>Jobs created</strong></th>
+<th class="tbl-hdr">Captures employment effects.</th>
+</tr>
+<tr class="header">
+<th class="tbl-hdr"><strong>Tourist participation</strong></th>
+<th class="tbl-hdr">Links enterprises to tourism demand.</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<h3 id="critical-assumptions-and-uncertainties-2">Critical Assumptions
+and Uncertainties</h3>
+<ul>
+<li>
+<p>Demand for low-impact and heritage-based experiences must
+materialize.</p>
+</li>
+<li>
+<p>Market access through hotels or operators is critical.</p>
+</li>
+<li>
+<p>Small enterprises may require ongoing support beyond initial
+incubation.</p>
+</li>
+<li>
+<p>Cultural commodification risks must be managed carefully.</p>
+</li>
+</ul>
+<h2 id="intervention-8-ghost-gear-recovery">Intervention 8: Ghost Gear
+Recovery</h2>
+<h3 id="measurement-focus-7">Measurement Focus</h3>
+<p>The SROI should assess whether ghost gear recovery reduces marine
+debris, habitat damage, and wildlife entanglement while creating
+supplemental income and circular economy opportunities. The monetized
+case may include avoided cleanup costs, recycled material value, fisher
+income, and avoided damage to tourism or fisheries assets.</p>
+<h3 id="key-metrics-indicators-7">Key Metrics &amp; Indicators</h3>
+<table class="data-table">
+<colgroup>
+<col style="width: 50%"/>
+<col style="width: 50%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th class="tbl-hdr"><strong>Metric / Indicator</strong></th>
+<th class="tbl-hdr"><strong>Relevance to SROI</strong></th>
+</tr>
+<tr class="odd">
+<th class="tbl-hdr"><strong>Tons of ghost gear recovered</strong></th>
+<th class="tbl-hdr">Measures the scale of gear recovery.</th>
+</tr>
+<tr class="header">
+<th class="tbl-hdr"><strong>Wildlife entanglement incidents</strong></th>
+<th class="tbl-hdr">Captures ecological harm reduction where measurable.</th>
+</tr>
+<tr class="odd">
+<th class="tbl-hdr"><strong>Income generated from recovery activities</strong></th>
+<th class="tbl-hdr">Supports livelihood valuation.</th>
+</tr>
+<tr class="header">
+<th class="tbl-hdr"><strong>Recycling outputs (volume and value)</strong></th>
+<th class="tbl-hdr">Supports circular economy valuation.</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<h3 id="critical-assumptions-and-uncertainties-3">Critical Assumptions
+and Uncertainties</h3>
+<ul>
+<li>
+<p>Requires sustained incentive systems for fishers and community
+participants.</p>
+</li>
+<li>
+<p>Economic viability of recycling depends on material markets,
+processing capacity, and logistics costs.</p>
+</li>
+<li>
+<p>Risk of re-accumulation if upstream sources are not addressed.</p>
+</li>
+</ul>
+<h2 id="cross-cutting-sroi-design-considerations">Cross-Cutting SROI
+Design Considerations</h2>
+<p>Across the intervention portfolio, several assumptions will strongly
+influence SROI results. First, ecological benefits often accrue over
+long time horizons, while many operator costs occur upfront. Discount
+rates, recovery curves, and benefit timing should be tested through
+sensitivity analysis.</p>
+<p>Second, several benefits depend on transferring evidence from other
+geographies. These transfer assumptions should be clearly documented and
+adjusted for the Red Sea context.</p>
+<p>Third, the analysis should distinguish between benefits that can be
+monetized with reasonable confidence and benefits that should be treated
+narratively. Operator revenue, cost savings, employment income, carbon
+value, and avoided damage costs are more likely to support monetization.
+Cultural identity, stewardship, community trust, destination
+authenticity, and long-term sense of ownership may be highly material
+but should likely be treated through qualitative evidence.</p>
+<p>Finally, the SROI should avoid implying false precision. The most
+useful output may be a scenario-based model that shows low, base, and
+high cases for each intervention, supported by transparent
+assumptions.</p>
+<h1 id="realizing-the-business-case-implementation-governance-and-scale">10.
+Realizing the Business Case: Implementation, Governance, and Scale</h1>
+<p>The business case for regenerative tourism is strong, but its
+realization depends on several important strategic considerations
+related to implementation, scale, and system dynamics.</p>
+<p><strong>First, regenerative interventions are rarely implemented in
+isolation — and the portfolio effect matters.</strong></p>
+<p>While most available evidence assesses interventions individually, in
+practice they are typically deployed together, and there is strong
+rationale for deliberate bundling. Complementary interventions can both
+reduce ongoing damage and accelerate recovery simultaneously: reef-safe
+moorings implemented alongside coral restoration efforts are a clear
+example, eliminating a source of physical disturbance while active
+replanting is underway. The combined and synergistic effects of bundled
+interventions remain an area where evidence is still developing, but the
+directionality is clear — well-sequenced portfolios are likely to
+outperform the sum of their parts.</p>
+<p><strong>Second, the feasibility of specific interventions is often
+highly context-dependent.</strong></p>
+<p>Certain solutions are only viable in particular geographic or
+environmental conditions along the Red Sea coastline. Technologies such
+as seawater air conditioning (SWAC) may only be feasible in locations
+with appropriate bathymetric and thermal characteristics, such as parts
+of the Gulf of Aqaba or near Jeddah. Similarly, ecosystem-based
+interventions depend on the presence and condition of underlying
+habitats.</p>
+<p><strong>Third, governance and incentive structures are critical to
+sustaining regenerative outcomes over time.</strong></p>
+<p>Hospitality assets may change ownership or management within
+relatively short time horizons, creating a risk that regenerative
+practices are not maintained. This highlights the importance of
+complementary mechanisms — destination-level standards, certification
+systems, long-term stewardship agreements, or policy frameworks — to
+ensure continuity and protect investments in natural capital.</p>
+<p><strong>Fourth, regenerative interventions often operate over long
+time horizons.</strong></p>
+<p>Ecological recovery processes — particularly for coral reefs and
+coastal ecosystems — may take years or decades to materialize. This
+temporal dynamic can affect how certain interventions appear when
+evaluated using standard discounting approaches, even where long-term
+value creation is substantial. Framing these as infrastructure-class
+investments, rather than short-cycle operational returns, is important
+for attracting the right capital and setting appropriate
+expectations.</p>
+<p><strong>Finally, achieving meaningful scale will require a
+diversified portfolio of interventions deployed across different
+geographies and systems.</strong></p>
+<p>Scaling potential varies significantly: some interventions may
+demonstrate strong returns but apply only in limited contexts, while
+others are more broadly replicable across the hospitality sector.
+Certain natural systems — reef-based tourism in particular — are also
+subject to ecological carrying capacity constraints that limit the
+volume of visitors that can be sustainably accommodated. These dynamics
+reinforce the case for portfolio diversification as a scaling strategy,
+and position regenerative tourism not as a single replicable product,
+but as a destination-shaping approach that compounds in value as more
+operators participate.</p>
+<h1 id="strategic-implications-business-case">11. Strategic Implications
+&amp; Business Case</h1>
+<h2 id="strategic-importance-for-wave">Strategic Importance for
+WAVE</h2>
+<p>This SROI analysis positions WAVE as an evidence-based advocate for
+regenerative coastal tourism in the Red Sea context while also
+clarifying the business case for operator adoption and investment. By
+translating ecological and social outcomes into commercially relevant
+value, the analysis can help move regenerative tourism from aspiration
+to investable strategy. It can also support several strategic purposes:
+encouraging hospitality operators to voluntarily adopt regenerative
+interventions, attracting impact investors and blended finance,
+informing destination standards, and positioning Saudi Arabia as a
+global reference point for nature-positive tourism.</p>
+<p>The strategic timing is favorable. Tourism remains one of the world's
+largest economic sectors, contributing just over $9.9 trillion to the
+global economy in 2023, or 9.1% of global GDP (World Travel &amp;
+Tourism Council, 2024). At the same time, tourism can place significant
+pressure on the ecological systems that make destinations valuable, with
+global tourism estimated to account for approximately 8% of global
+greenhouse gas emissions (Lenzen et al., 2018). This dual role — as both
+a driver of environmental pressure and a beneficiary of healthy
+ecosystems — creates a strong case for regenerative models that go
+beyond harm reduction.</p>
+<p>For premium coastal destinations, coral reefs, mangroves, water
+quality, marine biodiversity, and cultural heritage are not peripheral
+amenities — they are core components of the tourism product. Coral reef
+tourism alone has been estimated at nearly $36 billion annually
+worldwide (Spalding et al., 2017). In the Red Sea context, regenerative
+investment can therefore be framed not only as environmental
+stewardship, but as a strategy for protecting and enhancing the
+destination assets that support pricing power, visitor satisfaction,
+repeat visitation, and long-term competitiveness.</p>
+<p>The business case for regenerative tourism rests on several mutually
+reinforcing pathways: ecological restoration and protection that
+improves nature-based visitor experiences; nature-based and
+infrastructure interventions that reduce costs by avoiding damage and
+degradation; visible regenerative leadership that strengthens brand
+equity and attracts values-aligned travelers; improved ecological
+resilience and governance that reduces climate, reputational, and
+regulatory risks; and credible evidence of impact that improves access
+to values-aligned capital.</p>
+<p>Regenerative tourism also aligns with broader policy and financing
+priorities. The Kunming-Montreal Global Biodiversity Framework calls for
+mobilizing at least $200 billion per year for biodiversity by 2030
+(Convention on Biological Diversity, 2022). Tourism is well positioned
+to contribute to this agenda because it is a major beneficiary of
+ecosystem services, particularly in coastal and marine destinations.</p>
+<h2 id="key-takeaways">Key Takeaways</h2>
+<ul>
+<li>
+<p>Regenerative tourism in the Red Sea context has a multidimensional
+value proposition. It can improve ecological conditions, strengthen
+community participation, reduce risk, support premium positioning, and
+enhance long-term hospitality asset value.</p>
+</li>
+<li>
+<p>The distinction between sustainable and regenerative tourism is
+strategically important. Sustainable tourism often focuses on reducing
+harm, while regenerative tourism focuses on improving the underlying
+ecological, social, and cultural assets that make destinations
+valuable.</p>
+</li>
+<li>
+<p>The business case is strongest where regenerative interventions can
+be linked to revenue growth, cost avoidance, risk reduction, brand
+differentiation, asset resilience, and access to values-aligned
+capital.</p>
+</li>
+<li>
+<p>A complete SROI should monetize the clearest value pathways while
+also recognizing material non-monetized outcomes, including cultural
+identity, local stewardship, pride of place, community trust, and
+destination authenticity.</p>
+</li>
+</ul>
+<h1 id="next-steps">12. Next Steps</h1>
+<p>Phase 2 will move from value proposition development and scope
+definition to rigorous quantification of the selected SROI components.
+Building on the intervention portfolio, stakeholder mapping, evidence
+review, and logic model developed in Phase 1, the next phase will
+generate monetized impact estimates, SROI ratios, and sensitivity
+analyses for prioritized regenerative tourism pathways.</p>
+<p>The immediate priority is to convert the current strategic scope into
+a practical modeling plan. This will require finalizing the intervention
+portfolio, collecting site- and operator-specific data, identifying
+monetization methods, building the SROI model, and reviewing assumptions
+with WAVE and relevant implementation partners.</p>
+<h2 id="finalize-the-sroi-scope">1. Finalize the SROI Scope</h2>
+<p>The first step is to confirm which interventions should be included
+in the Phase 2 SROI model. This should include reviewing the selected
+intervention portfolio with the WAVE team and determining whether any
+interventions should be added, removed, combined, or reframed based on
+stakeholder feedback and implementation feasibility.</p>
+<p>This step should also clarify whether the SROI will model each
+intervention separately, model a bundled portfolio, or use both
+approaches.</p>
+<h2 id="collect-priority-data-for-monetization">2. Collect Priority Data
+for Monetization</h2>
+<p>Phase 2 should prioritize data collection for the pathways most
+likely to support credible monetization.</p>
+<p><strong>Priority Data Needs</strong></p>
+<table class="data-table">
+<colgroup>
+<col style="width: 29%"/>
+<col style="width: 70%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th class="tbl-hdr"><strong>Data Area</strong></th>
+<th class="tbl-hdr"><strong>Examples of Data Needed</strong></th>
+</tr>
+<tr class="odd">
+<th class="tbl-hdr"><strong>Reef and marine ecosystem condition</strong></th>
+<th class="tbl-hdr">Baseline reef condition surveys, coral cover, structural complexity,
+water quality, and existing ecological monitoring data for relevant Red
+Sea sites.</th>
+</tr>
+<tr class="header">
+<th class="tbl-hdr"><strong>Tourism demand and willingness to pay</strong></th>
+<th class="tbl-hdr">Diver, snorkeler, and tourist willingness-to-pay data specific to
+the Red Sea, Gulf of Aqaba, or comparable premium marine tourism
+markets.</th>
+</tr>
+<tr class="odd">
+<th class="tbl-hdr"><strong>Hospitality operator performance</strong></th>
+<th class="tbl-hdr">Room rate, occupancy, ADR, repeat visitation, guest satisfaction,
+and ancillary spend data that may be linked to environmental quality or
+regenerative positioning.</th>
+</tr>
+<tr class="header">
+<th class="tbl-hdr"><strong>Mangrove and coastal resilience</strong></th>
+<th class="tbl-hdr">Regional mangrove extent and condition mapping, shoreline exposure,
+flood or storm damage records, and avoided-cost data.</th>
+</tr>
+<tr class="odd">
+<th class="tbl-hdr"><strong>Local livelihoods and supply chains</strong></th>
+<th class="tbl-hdr">Fisher income, catch data, procurement volumes, sustainable seafood
+premiums, local workforce data, and community enterprise revenue
+potential.</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<h2 id="build-the-sroi-model-and-document-assumptions">3. Build the SROI
+Model and Document Assumptions</h2>
+<p>The SROI model should estimate monetized benefits, costs, SROI
+ratios, and stakeholder-level value distribution for the prioritized
+pathways. As the model is built, key assumptions should be documented
+transparently, including assumptions related to ecological recovery
+rates, visitor willingness to pay, operator adoption costs, discount
+rates, carbon prices, avoided-cost estimates, and the transferability of
+evidence from other regions.</p>
+<p>Because many assumptions will carry uncertainty, the model should
+include low, base, and high scenarios. Sensitivity analysis should be
+used to show which assumptions have the greatest influence on
+results.</p>
+<h2 id="review-assumptions-and-preliminary-results-with-stakeholders">4.
+Review Assumptions and Preliminary Results with Stakeholders</h2>
+<p>Once the initial model has been developed, assumptions and
+preliminary results should be reviewed with WAVE, Red Sea Global,
+hospitality operators, marine research partners, and relevant community
+or supply-chain stakeholders. This review should focus on whether the
+assumptions are realistic, whether the monetization methods are
+credible, and whether the results align with how regenerative tourism
+could actually be implemented in the Red Sea context.</p>
+<h2 id="finalize-the-sroi-outputs">5. Finalize the SROI Outputs</h2>
+<p>The final Phase 2 outputs should include an evidence-based,
+decision-ready SROI analysis that communicates not only whether
+regenerative tourism creates value, but where, for whom, over what time
+horizon, and under what implementation conditions. Outputs should
+include monetized impact estimates, SROI ratios, sensitivity analysis,
+stakeholder-level value distribution, and a clear distinction between
+monetized, quantified-only, and narrative outcomes.</p>
+<h1 id="appendix">13. Appendix</h1>
+<h2 id="a.-regenerative-tourism-principles-earthcheck-framework">A.
+Regenerative Tourism Principles (EarthCheck Framework)</h2>
+<p>The following table summarizes the EarthCheck Regenerative Tourism
+Principles that informed the scoping framework:</p>
+<p><strong>EarthCheck Regenerative Tourism Principles</strong></p>
+<table class="data-table">
+<colgroup>
+<col style="width: 25%"/>
+<col style="width: 37%"/>
+<col style="width: 37%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th class="tbl-hdr"><strong>EarthCheck Indicator</strong></th>
+<th class="tbl-hdr"><strong>Regenerative Principle</strong></th>
+<th class="tbl-hdr"><strong>Example Outcome</strong></th>
+</tr>
+<tr class="odd">
+<th class="tbl-hdr"><strong>Energy consumption</strong></th>
+<th class="tbl-hdr">Resource efficiency and circularity</th>
+<th class="tbl-hdr">Increase in renewable energy generation</th>
+</tr>
+<tr class="header">
+<th class="tbl-hdr"><strong>GHG emissions</strong></th>
+<th class="tbl-hdr">Climate change mitigation and adaptation</th>
+<th class="tbl-hdr">Net-positive emissions (reduce + offset via credible schemes)</th>
+</tr>
+<tr class="odd">
+<th class="tbl-hdr"><strong>Water consumption</strong></th>
+<th class="tbl-hdr">Water stewardship and restoration</th>
+<th class="tbl-hdr">More efficient water use; aquifer replenishment</th>
+</tr>
+<tr class="header">
+<th class="tbl-hdr"><strong>Waste generation</strong></th>
+<th class="tbl-hdr">Waste reduction, upcycling, and recycling</th>
+<th class="tbl-hdr">Removal of waste from landfill; ocean waste recovery</th>
+</tr>
+<tr class="odd">
+<th class="tbl-hdr"><strong>Biodiversity conservation</strong></th>
+<th class="tbl-hdr">Ecosystem restoration and enhancement</th>
+<th class="tbl-hdr">Net positive increase in ecosystem rehabilitation with native
+species</th>
+</tr>
+<tr class="header">
+<th class="tbl-hdr"><strong>Sustainable procurement</strong></th>
+<th class="tbl-hdr">Local and ethical sourcing</th>
+<th class="tbl-hdr">Sustainable community sourcing of majority of supply</th>
+</tr>
+<tr class="odd">
+<th class="tbl-hdr"><strong>Social &amp; cultural engagement</strong></th>
+<th class="tbl-hdr">Community empowerment and cultural preservation</th>
+<th class="tbl-hdr">Active cultural preservation; local language signage; traditional
+handicraft purchasing</th>
+</tr>
+<tr class="header">
+<th class="tbl-hdr"><strong>Economic performance</strong></th>
+<th class="tbl-hdr">Equitable distribution of economic benefits</th>
+<th class="tbl-hdr">More than 75% of benefits remain in local area</th>
+</tr>
+<tr class="odd">
+<th class="tbl-hdr"><strong>Education &amp; capacity building</strong></th>
+<th class="tbl-hdr">Knowledge sharing and local capacity</th>
+<th class="tbl-hdr">Contribution to knowledge building and training among local
+community</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<h2 id="b.-key-definitions">B. Key Definitions</h2>
+<p><strong>Glossary of Terms</strong></p>
+<table class="data-table">
+<colgroup>
+<col style="width: 29%"/>
+<col style="width: 70%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th class="tbl-hdr"><strong>Term</strong></th>
+<th class="tbl-hdr"><strong>Definition</strong></th>
+</tr>
+<tr class="odd">
+<th class="tbl-hdr"><strong>Sustainable tourism</strong></th>
+<th class="tbl-hdr">Tourism that reduces negative environmental and social impacts
+without improving baseline conditions. Defined as harm reduction.</th>
+</tr>
+<tr class="header">
+<th class="tbl-hdr"><strong>Regenerative tourism</strong></th>
+<th class="tbl-hdr">Tourism that actively improves environmental or social conditions
+beyond the baseline present at the start of the intervention. Focuses on
+leaving destinations better than found.</th>
+</tr>
+<tr class="odd">
+<th class="tbl-hdr"><strong>Direct regenerative intervention</strong></th>
+<th class="tbl-hdr">Activities that actively restore, revive, or enhance ecosystems or
+communities through direct action (e.g., coral gardening, mangrove
+planting).</th>
+</tr>
+<tr class="header">
+<th class="tbl-hdr"><strong>Indirect regenerative intervention</strong></th>
+<th class="tbl-hdr">Activities that enable or accelerate regeneration by improving
+conditions that allow systems to recover naturally (e.g., mooring buoy
+installation to reduce anchor damage).</th>
+</tr>
+<tr class="odd">
+<th class="tbl-hdr"><strong>Within-footprint intervention</strong></th>
+<th class="tbl-hdr">Impact confined to the physical or operational boundary of the
+hospitality developer. Consistent with sustainability; not
+regenerative.</th>
+</tr>
+<tr class="header">
+<th class="tbl-hdr"><strong>Beyond-footprint / systemic intervention</strong></th>
+<th class="tbl-hdr">Impact that extends beyond the boundary of the operator and creates
+positive change in surrounding systems. The defining characteristic of
+regenerative impact.</th>
+</tr>
+<tr class="odd">
+<th class="tbl-hdr"><strong>SROI (Social Return on Investment)</strong></th>
+<th class="tbl-hdr">A framework for measuring and accounting for the social,
+environmental, and economic value generated by an investment. Expressed
+as a ratio of value created per unit of investment.</th>
+</tr>
+<tr class="header">
+<th class="tbl-hdr"><strong>Enabling intervention</strong></th>
+<th class="tbl-hdr">Activities that support or facilitate direct interventions but do
+not independently generate ocean or community impact (e.g., data
+monitoring, guest engagement programs).</th>
+</tr>
+<tr class="odd">
+<th class="tbl-hdr"><strong>Monetize (in this context)</strong></th>
+<th class="tbl-hdr">To assign a monetary value to a social or environmental outcome —
+not to generate revenue from it. Includes willingness-to-pay estimates,
+avoided cost calculations, and ecosystem service market values.</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<h2 id="c.-logic-model">C. Logic Model</h2>
+<p>The complete portfolio-level logic model for the regenerative coastal
+tourism SROI is available at the link below and as an image on the next
+page.</p>
+<p><strong>Full Interactive Logic Model:</strong> <a href="https://ecotonewave.github.io/Wave-Regen-Tourism/Wave_Regen_Tourism_Logic_Model.html"><u>https://ecotonewave.github.io/Wave-Regen-Tourism/Wave_Regen_Tourism_Logic_Model.html</u></a></p>
+<p><img src="/home/claude/report_media/media/image2.png" style="width:6.18889in;height:9.5in"/></p>
+<h2 id="d.-sources-referenced">D. Sources Referenced</h2>
+<p>Bellato, L., Frantzeskaki, N., &amp; Nygaard, C. A. (2023).
+Regenerative tourism: A conceptual framework leveraging theory and
+practice. Tourism Geographies, 25(4), 1026–1046.</p>
+<p>Convention on Biological Diversity. (2022). Kunming-Montreal Global
+Biodiversity Framework: Target 19. Secretariat of the Convention on
+Biological Diversity.</p>
+<p>Damigos, D., &amp; Kontogianni, A. (2023). How much are consumers
+willing to pay for a greener hotel industry? Sustainability, 15(11),
+Article 8775.</p>
+<p>Duarte, C. M., et al. (2024). Advancing global climate and
+biodiversity goals through regenerative tourism. Sustainability, 16(20),
+Article 9133.</p>
+<p>EarthCheck Research Institute. (2023, June). Regenerative travel
+discussion paper. EarthCheck Research Institute.</p>
+<p>Ferretti, E., et al. (2023). Making a place special — The development
+of restorative marine ecotourism. Frontiers in Sustainable Tourism, 2,
+Article 1282392.</p>
+<p>FII Institute, Red Sea Global, WAVE, &amp; Prince Albert II of Monaco
+Foundation. (2025). Unlocking innovation for regenerative tourism.
+Future Investment Initiative Institute.</p>
+<p>Lenzen, M., et al. (2018). The carbon footprint of global tourism.
+Nature Climate Change, 8, 522–528.</p>
+<p>Mukherjee, N., et al. (2014). Ecosystem service valuations of
+mangrove ecosystems. PLOS ONE, 9(9), Article e107706.</p>
+<p>NOAA Coral Reef Conservation Program. (2013). The economic value of
+U.S. coral reefs: 2001–2011.</p>
+<p>Schmidt-Roach, S., et al. (2020). Beyond reef restoration:
+Next-generation techniques for coral gardening. Frontiers in Marine
+Science, 7, Article 672.</p>
+<p>Spalding, M., et al. (2017). Mapping the global value and
+distribution of coral reef tourism. Marine Policy, 82, 104–113.</p>
+<p>Vegh, T., et al. (2014). Mangrove ecosystem services valuation: State
+of the literature (NI WP 14-06). Nicholas Institute for Environmental
+Policy Solutions, Duke University.</p>
+<p>World Bank. (2025). When the beach disappears: How tourism can work
+with nature to fight erosion.</p>
+<p>World Travel &amp; Tourism Council. (2023). Travel &amp; tourism:
+Economic impact 2023.</p>
+<p>World Travel &amp; Tourism Council. (2024). Travel &amp; tourism set
+to break all records in 2024.</p>
+<p><em>Prepared by Ecotone Partners for WAVE | May 2026 |
+Confidential</em></p>
+
+<footer id="page-footer">
+  <span><img src="data:image/png;base64,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" style="width:20px;height:20px;vertical-align:middle;margin-right:6px;">ecotone analytics</span>
+  <span>WAVE Value Proposition Report &nbsp;|&nbsp; Phase 1: Topic Assessment &amp; SROI Scope Definition &nbsp;|&nbsp; May 2026 &nbsp;|&nbsp; Confidential</span>
+</footer>
+</div>
+</body>
+</html>

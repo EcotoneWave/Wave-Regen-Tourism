@@ -6,15 +6,15 @@
 <title>Regenerative Blue Tourism Portfolio — Logic Model</title>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: Arial, sans-serif; font-size: 11px; background: #f4f6f4; color: #1a1a1a; padding: 24px; }
-  .page-header { margin-bottom: 20px; }
-  .page-header h1 { font-size: 18px; font-weight: 700; color: #1B6B4A; letter-spacing: 0.02em; margin-bottom: 4px; }
-  .page-header p { font-size: 11px; color: #555; }
+  body { font-family: Calibri, Arial, sans-serif; font-size: 11px; background: #F5F2EB; color: #1a1a1a; padding: 24px; }
+  .page-header { margin-bottom: 20px; border-bottom: 3px solid #DC5038; padding-bottom: 12px; }
+  .page-header h1 { font-size: 18px; font-weight: 700; color: #002E4A; letter-spacing: 0.02em; margin-bottom: 4px; }
+  .page-header p { font-size: 11px; color: #4080AB; font-weight: 600; }
   .legend { display: flex; gap: 24px; margin-bottom: 16px; align-items: center; flex-wrap: wrap; }
   .legend-item { display: flex; align-items: center; gap: 6px; font-size: 10.5px; color: #444; }
   .legend-swatch { width: 14px; height: 14px; border-radius: 2px; flex-shrink: 0; }
-  .swatch-monetizable { background: #D6EFE0; border: 1px solid #8CC9A6; }
-  .wrapper { overflow-x: auto; border-radius: 6px; box-shadow: 0 2px 12px rgba(0,0,0,0.12); }
+  .swatch-monetizable { background: #F5D9BA; border: 1px solid #DC5038; }
+  .wrapper { overflow-x: auto; border-radius: 6px; box-shadow: 0 2px 16px rgba(0,46,74,0.14); }
   table { border-collapse: collapse; width: 100%; min-width: 1500px; background: #fff; }
   col.c-inputs     { width: 8%; }
   col.c-activities { width: 12%; }
@@ -23,36 +23,36 @@
   col.c-int        { width: 14%; }
   col.c-lt         { width: 14%; }
   col.c-impacts    { width: 13%; }
-  thead th { background: #1B6B4A; color: #fff; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; padding: 10px; text-align: left; border-right: 1px solid #2E7D52; vertical-align: bottom; }
+  thead th { background: #002E4A; color: #fff; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; padding: 10px; text-align: left; border-right: 1px solid #003D5C; vertical-align: bottom; }
   thead th:last-child { border-right: none; }
   .phase-label { display: block; font-size: 9px; font-weight: 400; opacity: 0.75; text-transform: none; letter-spacing: 0; margin-top: 2px; }
-  td.section-label { background: #2E5E3A; color: #fff; font-weight: 700; font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.07em; padding: 7px 10px; border-top: 2px solid #1B6B4A; border-bottom: 1px solid #1B6B4A; }
-  td { padding: 7px 10px; vertical-align: top; border-right: 1px solid #dde8e2; border-bottom: 1px solid #dde8e2; line-height: 1.4; color: #1a1a1a; }
+  td.section-label { background: #DC5038; color: #fff; font-weight: 700; font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.07em; padding: 7px 10px; border-top: 2px solid #002E4A; border-bottom: 1px solid #002E4A; }
+  td { padding: 7px 10px; vertical-align: top; border-right: 1px solid #C5D0D8; border-bottom: 1px solid #C5D0D8; line-height: 1.4; color: #002E4A; }
   td:last-child { border-right: none; }
-  li.monetizable { background: #D6EFE0; border-radius: 3px; padding-left: 14px !important; }
-  li.monetizable::before { color: #0F4A30 !important; left: 4px !important; }
+  li.monetizable { background: #F5D9BA; border-radius: 3px; padding-left: 14px !important; }
+  li.monetizable::before { color: #DC5038 !important; left: 4px !important; }
   .cell-list { list-style: none; padding: 0; margin: 0; }
   .cell-list li { padding: 3px 4px 3px 10px; position: relative; line-height: 1.4; margin-bottom: 2px; }
-  .cell-list li::before { content: "•"; position: absolute; left: 0; color: #1B6B4A; font-weight: bold; }
-  .activity-num { display: inline-block; background: #1B6B4A; color: #fff; font-size: 9px; font-weight: 700; border-radius: 3px; padding: 1px 5px; margin-right: 4px; white-space: nowrap; }
-  .activity-cell { font-weight: 600; color: #1B6B4A; font-size: 10.5px; }
-  .impact-cell { font-weight: 600; color: #0F4A30; font-style: italic; }
-  .input-cell { font-size: 10px; color: #444; }
-  .ref { font-size: 8.5px; color: #1B6B4A; font-weight: 600; white-space: nowrap; }
-  .footnote { margin-top: 16px; font-size: 10px; color: #666; font-style: italic; }
-  .footnote strong { color: #1B6B4A; }
+  .cell-list li::before { content: "•"; position: absolute; left: 0; color: #DC5038; font-weight: bold; }
+  .activity-num { display: inline-block; background: #DC5038; color: #fff; font-size: 9px; font-weight: 700; border-radius: 3px; padding: 1px 5px; margin-right: 4px; white-space: nowrap; }
+  .activity-cell { font-weight: 600; color: #002E4A; font-size: 10.5px; }
+  .impact-cell { font-weight: 600; color: #002E4A; font-style: italic; }
+  .input-cell { font-size: 10px; color: #002E4A; }
+  .ref { font-size: 8.5px; color: #DC5038; font-weight: 600; white-space: nowrap; }
+  .footnote { margin-top: 16px; font-size: 10px; color: #002E4A; font-style: italic; opacity: 0.7; }
+  .footnote strong { color: #DC5038; }
 </style>
 </head>
 <body>
 
 <div class="page-header">
   <h1>Regenerative Blue Tourism Portfolio &mdash; Logic Model</h1>
-  <p>WAVE &nbsp;|&nbsp; Phase 1 Scoping &nbsp;|&nbsp; April 2026</p>
+  <p>WAVE &nbsp;|&nbsp; Phase 1 Scoping &nbsp;|&nbsp; May 2026</p>
 </div>
 
 <div class="legend">
   <div class="legend-item"><div class="legend-swatch swatch-monetizable"></div> Potential monetizable outcome</div>
-  <div class="legend-item" style="color:#1B6B4A; font-weight:600; font-size:10.5px;">Numbers in parentheses indicate alignment with activities (1)–(8)</div>
+  <div class="legend-item" style="color:#002E4A; font-weight:600; font-size:10.5px;">Numbers in parentheses indicate alignment with activities (1)–(8)</div>
 </div>
 
 <div class="wrapper">
@@ -337,9 +337,9 @@
 </div>
 
 <p class="footnote">
-  <strong>Key:</strong> Green-shaded items indicate potential monetizable outcomes for SROI analysis. &nbsp;|&nbsp;
+  <strong>Key:</strong> Orange-shaded items indicate potential monetizable outcomes for SROI analysis. &nbsp;|&nbsp;
   Numbers in parentheses (e.g., <strong>(1)(2)</strong>) indicate alignment with the corresponding activity. &nbsp;|&nbsp;
-  WAVE Regenerative Tourism SROI &mdash; Phase 1 Scoping &nbsp;|&nbsp; Ecotone Partners, April 2026
+  WAVE Regenerative Tourism SROI &mdash; Phase 1 Scoping &nbsp;|&nbsp; Ecotone Partners, May 2026
 </p>
 
 </body>
